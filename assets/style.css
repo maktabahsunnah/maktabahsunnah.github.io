@@ -7,6 +7,9 @@ html {
   }
 }
 
+a {
+  color: #003b00! important;
+}
 .container {
   max-width: 960px;
 }
