@@ -5,7 +5,7 @@
   <li><a href="" ng-click="scholar = 'name'; reverse=false">Alphabetical</a></li>
 </ol>
 
-<div class="row" ng-repeat="item in Scholars | orderBy:scholar:reverse" style="padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #eee;">
+<div class="row" ng-repeat="item in scholars | orderBy:scholar:reverse" style="padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #eee;">
 	<div class="col-sm-3 text-center" ng-show="item.images.length">
 	  <a href="#/scholars/{{item.id}}">
 		<img class="img-circle" ng-src="{{item.images[0]}}" alt="{{item.name}}" style="width: 140px; height: 140px;" />
