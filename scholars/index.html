@@ -11,6 +11,7 @@
 
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/fonts/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
 
@@ -35,7 +36,7 @@
 <table class="table table-striped">
   <tr ng-repeat="x in names | filter:Name">
     <th scope="row">{{ $index + 1 }}</th>
-    <td><a href="{{ x.Link }}">{{ x.Name }}</a></td>
+    <td><span class="icon-quill"></span> <a href="{{ x.Link }}">{{ x.Name }}</a></td>
   </tr>
 </table>
 <div ng-include="'../assets/views/footer.html'"></div>
