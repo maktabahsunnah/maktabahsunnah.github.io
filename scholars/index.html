@@ -11,6 +11,7 @@
 
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
 
   <body>
@@ -21,7 +22,8 @@
         <a class="p-2 text-dark" href="../index.html">Home</a>
       </nav>
       <a class="btn btn-outline-primary active" href="../index.html">Scholars</a>
-    </div>
+    </div>
+
 
     <div class="container">
 <nav aria-label="breadcrumb">
@@ -36,28 +38,16 @@
       <h3>Scholars</h3>
    </div>
 
-    <div class="container">
-
+    <div class="container"  ng-app="myApp" ng-controller="customersCtrl">
 <table class="table">
-  <tbody>
-    <tr>
-      <td><a href="ibn-qayyim/index.html" class="badge badge-light">Ibn Al-Qayyim</a></td>
-
-    </tr>
-    <tr>
-      <td><a href="fawzan/index.html" class="badge badge-light">Shaykh Salih ibn Fawzan ibn Abdullah Al-Fawzan</a></td>
-
-    </tr>
-    <tr>
-      <td><a href="bin-baz/index.html" class="badge badge-light">Shaykh Abdul Aziz bin Abdullah bin Baz</a></td>
-
-    </tr>
-      <td><a href="abdulaziz-ali-shaykh/index.html" class="badge badge-light">Shaykh Abdul Aziz bin Abdullah Ash-Shaykh</a></td>
-
-    </tr>
-
-  </tbody>
+    <tbody>
+  <tr ng-repeat="x in names">
+    <td>{{ x.Name }}</td>
+    <td>{{ x.Link }}</td>
+  </tr>
+    </tbody>
 </table>
+
 
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
@@ -83,7 +73,8 @@
             </ul>
           </div>
         </div>
-      </footer>
+      </footer>
+
     </div>
 
 
@@ -94,5 +85,12 @@
     <script>window.jQuery || document.write('<script src="../assets/jquery-slim.min.js"><\/script>')</script>
     <script src="../assets/popper.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+    $http.get("../assets/data/scholar-lists.html")
+    .then(function (response) {$scope.names = response.data.records;});
+});
+</script>
   </body>
 </html>
