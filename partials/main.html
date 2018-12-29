@@ -2,10 +2,12 @@
     <div ng-controller="scholarListCtrl">
 
 <table class="table table-striped">
+<tbody>
   <tr ng-repeat="item in scholars | limitTo:10">
     <th scope="row">{{ $index + 1 }}</th>
     <td><span class="icon-quill"></span> <a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
   </tr>
+<tbody>
 </table>
 
    <div class="text-center">
