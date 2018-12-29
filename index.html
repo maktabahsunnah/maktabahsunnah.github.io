@@ -18,7 +18,8 @@
   <body>
   <div ng-include="'assets/views/navbar.html'"></div>
 
-    <div class="container-fluid" ng-controller="customersCtrl">
+    <div class="container-fluid">
+    <div class="container" ng-controller="customersCtrl">
 <div class="form-group"><input type="text" class="form-control" ng-model="Name" placeholder="Search scholar name..."></div>
 <table class="table table-striped">
   <tr ng-repeat="x in names | filter:Name">
@@ -26,6 +27,7 @@
     <td><span class="icon-quill"></span> <a href="{{ x.Link }}">{{ x.Name }}</a></td>
   </tr>
 </table>
+    </div>
 <div ng-include="'assets/views/footer.html'"></div>
     </div>
 
