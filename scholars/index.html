@@ -43,8 +43,7 @@
     <tbody>
   <tr ng-repeat="x in names">
     <td>{{ $index + 1 }}</td>
-    <td>{{ x.Name }}</td>
-    <td>{{ x.Link }}</td>
+    <td><a href="../{{ x.Link }}">{{ x.Name }}</a></td>
   </tr>
     </tbody>
 </table>
