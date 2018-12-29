@@ -18,18 +18,17 @@
   <body>
   <div ng-include="'assets/views/navbar.html'"></div>
 
-
     <div class="container" ng-controller="customersCtrl">
-<div class="form-group"><input type="text" class="form-control" ng-model="Name" placeholder="Search a scholar name..."></div>
-<br/>
+
 <table class="table table-striped">
-  <tr ng-repeat="x in names | filter:Name">
+  <tr ng-repeat="x in names | limitTo:10">
     <th scope="row">{{ $index + 1 }}</th>
     <td><span class="icon-quill"></span> <a href="{{ x.Link }}">{{ x.Name }}</a></td>
   </tr>
 </table>
+      
+      <a class="btn btn-outline-secondary" href="scholars/index.html">View all scholars</a>
 
-<div ng-include="'assets/views/footer.html'"></div>
     </div>
 
 
