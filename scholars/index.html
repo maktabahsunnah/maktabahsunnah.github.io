@@ -40,7 +40,7 @@
 
     <div class="container"  ng-app="myApp" ng-controller="customersCtrl">
 
-<p><input type="text" ng-model="Name"></p>
+<div class="form-group"><input type="text" class="form-control" ng-model="Name"></div>
 <table>
   <tr ng-repeat="x in names | filter:Name">
     <td>{{ $index + 1 }}</td>
