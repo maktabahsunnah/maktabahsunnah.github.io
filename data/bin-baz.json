@@ -8,8 +8,9 @@
         "book5" : "Fabaceae",
         "book6" : "Mimosoideae",
         "book7" : "Acacia",
-        "images" : [
-            "images/acacia-small.jpg",
-            "images/acacia-large.jpg"
+
+        "books" : [
+          "book1": "Advice to Muslim men desiring non-Muslim women",
+          "book2": "How to properly visit the grave of the Prophet صلى الله عليه وسلم"
         ]
 	}
