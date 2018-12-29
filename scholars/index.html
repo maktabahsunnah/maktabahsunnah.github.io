@@ -15,15 +15,7 @@
   </head>
 
   <body>
-
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Maktabah As-Sunnah</h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="../index.html">Home</a>
-      </nav>
-      <a class="btn btn-outline-primary active" href="../index.html">Scholars</a>
-    </div>
-
+  <div ng-include="'../assets/views/navbar.html'"></div>
 
     <div class="container">
 <nav aria-label="breadcrumb">
@@ -39,7 +31,6 @@
    </div>
 
     <div class="container"  ng-app="myApp" ng-controller="customersCtrl">
-
 <div class="form-group"><input type="text" class="form-control" ng-model="Name" placeholder="Search scholar name..."></div>
 <table class="table table-striped">
   <tr ng-repeat="x in names | filter:Name">
@@ -47,7 +38,7 @@
     <td><a href="{{ x.Link }}">{{ x.Name }}</a></td>
   </tr>
 </table>
-<div ng-include="'../views/footer.html'"></div>
+<div ng-include="'../assets/views/footer.html'"></div>
     </div>
 
 
