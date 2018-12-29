@@ -1,0 +1,10 @@
+      <div class="row text-center" ng-controller="scholarListCtrl">
+        <div class="col-md-4" ng-repeat="item in scholars | limitTo:3">
+          <a href="#/scholars/{{item.id}}">
+			<img class="img-circle" ng-src="{{item.images[0]}}" alt="{{item.name}}" style="width: 140px; height: 140px;" />
+		  </a>
+          <h2>{{item.name}}</h2>
+          <div ng-bind-html="item.desc | limitTo: 100"></div>
+          <p><a class="btn btn-default" href="#/scholars/{{item.id}}" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
