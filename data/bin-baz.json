@@ -2,12 +2,12 @@
 		"id" : "bin-baz",
         "name" : "Shaykh Abdul Aziz Bin Baz",
         "book1": "Advice to Muslim men desiring non-Muslim women",
-        "division" : "Magnoliophyta",
-        "book2" : "Magnoliopsida",
-        "book3" : "Fabales",
-        "book4" : "Fabaceae",
-        "book5" : "Mimosoideae",
-        "book6" : "Acacia",
+        "book2" : "How to properly visit the grave of the Prophet صلى الله عليه وسلم",
+        "book3" : "Magnoliopsida",
+        "book4" : "Fabales",
+        "book5" : "Fabaceae",
+        "book6" : "Mimosoideae",
+        "book7" : "Acacia",
         "images" : [
             "images/acacia-small.jpg",
             "images/acacia-large.jpg"
