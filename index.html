@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,60 +11,22 @@
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
 
   <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Maktabah As-Sunnah</h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="index.html">Home</a>
-      </nav>
-      <a class="btn btn-outline-primary" href="scholars/index.html">Scholars</a>
-    </div>
+  <div ng-include="'assets/views/navbar.html'"></div>
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h5></h5>
-      <p class="lead"></p>
-    </div>
-
-    <div class="container">
-
-<ul class="list-group list-group-flush">
-  <li class="list-group-item">Ibn Al-Qayyim</li>
-  <a class="list-group-item" href="scholars/bin-baz/index.html">Shaykh Abdul Aziz Bin Baz</a>
-  <a class="list-group-item" href="scholars/fawzan/index.html">Shaykh Salih Fawzan Al-Fawzan</a>
-  <a class="list-group-item" href="scholars/uthaymeen/index.html">Shaykh Salih Al-Uthaymeen</a>
-  <a class="list-group-item" href="scholars/index.html">View all scholars</a>
-</ul>
-
-      <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
-          <div class="col-12 col-md">
-            <img class="mb-2" src="assets/Mylogo.png" alt="">
-            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="https://instagram.com/Alsalafiyyah/" target="_blank">Instagram</a></li>
-              <li><a class="text-muted" href="https://www.facebook.com/groups/MaktabahSunnah" target="_blank">Facebook Group</a></li>
-              <li><a class="text-muted" href="scholars/index.html">Scholars</a></li>
-              <li><a class="text-muted" href="#">Heresy & Sectaniarism</a></li>
-
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Useful Sites</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="http://alifta.net" target="_blank">Alifta</a></li>
-              <li><a class="text-muted" href="https://www.alfawzan.af.org.sa/en" target="_blank">Fawzan</a></li>
-              <li><a class="text-muted" href="https://binbaz.org.sa/" target="_blank">BinBaz</a></li>
-              <li><a class="text-muted" href="http://rabee.net" target="_blank">Rabee.net</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </footer>
+    <div class="container-fluid" ng-controller="customersCtrl">
+<div class="form-group"><input type="text" class="form-control" ng-model="Name" placeholder="Search scholar name..."></div>
+<table class="table table-striped">
+  <tr ng-repeat="x in names | filter:Name">
+    <th scope="row">{{ $index + 1 }}</th>
+    <td><span class="icon-quill"></span> <a href="{{ x.Link }}">{{ x.Name }}</a></td>
+  </tr>
+</table>
+<div ng-include="'assets/views/footer.html'"></div>
     </div>
 
 
@@ -75,5 +37,12 @@
     <script>window.jQuery || document.write('<script src="assets/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+    $http.get("assets/data/scholar-lists.html")
+    .then(function (response) {$scope.names = response.data.records;});
+});
+</script>
   </body>
 </html>
