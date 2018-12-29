@@ -1,14 +1,13 @@
 	{
 		"id" : "bin-baz",
         "name" : "Shaykh Abdul Aziz Bin Baz",
-        "kingdom": "Plantae",
+        "book1": "Advice to Muslim men desiring non-Muslim women",
         "division" : "Magnoliophyta",
-        "class" : "Magnoliopsida",
-        "order" : "Fabales",
-        "family" : "Fabaceae",
-        "subfamily" : "Mimosoideae",
-        "genus" : "Acacia",
-
+        "book2" : "Magnoliopsida",
+        "book3" : "Fabales",
+        "book4" : "Fabaceae",
+        "book5" : "Mimosoideae",
+        "book6" : "Acacia",
         "images" : [
             "images/acacia-small.jpg",
             "images/acacia-large.jpg"
