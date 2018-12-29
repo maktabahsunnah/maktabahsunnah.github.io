@@ -23,7 +23,7 @@
 	
     app.controller('scholarDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
         $scope.scholars = [];
-        $http.get('data/' + $routeParams.flowerId + '.json').success(function(data) { 
+        $http.get('data/' + $routeParams.scholarId + '.json').success(function(data) { 
             $scope.scholars = data;
         });
     }]); 
