@@ -39,15 +39,14 @@
    </div>
 
     <div class="container"  ng-app="myApp" ng-controller="customersCtrl">
-<table class="table">
-    <tbody>
-  <tr ng-repeat="x in names">
-    <td>{{ $index + 1 }}</td>
-    <td><a href="../../{{ x.Link }}">{{ x.Name }}</a></td>
-  </tr>
-    </tbody>
-</table>
 
+<p><input type="text" ng-model="Name"></p>
+<table>
+  <tr ng-repeat="x in names | filter:Name">
+    <td>{{ $index + 1 }}</td>
+    <td><a href="{{ x.Link }}">{{ x.Name }}</a></td>
+  </tr>
+</table>
 
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
