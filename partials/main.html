@@ -1,5 +1,5 @@
 
-    <div class="container" ng-controller="scholarListCtrl">
+    <div ng-controller="scholarListCtrl">
 
 <table class="table table-striped">
   <tr ng-repeat="item in scholars | limitTo:10">
@@ -7,8 +7,10 @@
     <td><span class="icon-quill"></span> <a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
   </tr>
 </table>
+
    <div class="text-center">
-      <a class="btn btn-outline-secondary" href="#/scholars">Scholars</a>
+      <a class="btn btn-outline-secondary" href="#/scholars">View all scholars</a>
    </div>
+
     </div>
 
