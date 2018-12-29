@@ -32,14 +32,13 @@
    </div>
 
     <div class="container" ng-controller="customersCtrl">
-<div class="form-group"><input type="text" class="form-control" ng-model="Name" placeholder="Search scholar name..."></div>
+<div id="navbar" class="form-group"><input type="text" class="form-control" ng-model="Name" placeholder="Search scholar name..."></div>
 <table class="table table-striped">
   <tr ng-repeat="x in names | filter:Name">
     <th scope="row">{{ $index + 1 }}</th>
     <td><span class="icon-quill"></span> <a href="{{ x.Link }}">{{ x.Name }}</a></td>
   </tr>
 </table>
-<div ng-include="'../assets/views/footer.html'"></div>
     </div>
 
 
@@ -53,6 +52,20 @@ app.controller('customersCtrl', function($scope, $http) {
     $http.get("../assets/data/scholar-lists.html")
     .then(function (response) {$scope.names = response.data.records;});
 });
+</script>
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 </script>
   </body>
 </html>
