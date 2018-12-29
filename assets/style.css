@@ -7,7 +7,8 @@ html {
   }
 }
 body {
-  background: url(pattern.png) repeat;
+  background-image: url("pattern.png");
+  background-repeat: repeat-x;
 }
 a {
   color: #003b00! important;
