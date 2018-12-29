@@ -41,7 +41,7 @@
     <div class="container"  ng-app="myApp" ng-controller="customersCtrl">
 
 <div class="form-group"><input type="text" class="form-control" ng-model="Name"></div>
-<table>
+<table class="table table-striped">
   <tr ng-repeat="x in names | filter:Name">
     <td>{{ $index + 1 }}</td>
     <td><a href="{{ x.Link }}">{{ x.Name }}</a></td>
