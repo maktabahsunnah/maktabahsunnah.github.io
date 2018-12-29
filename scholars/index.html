@@ -31,7 +31,7 @@
 <div id="navbar" class="form-group"><input type="text" class="form-control" ng-model="Name" placeholder="Search scholar name..."></div>
 <table class="table table-striped">
   <tr ng-repeat="x in names | filter:Name">
-    <th scope="row">{{ $index + 1 }}</th>
+    <td>{{ $index + 1 }}</td>
     <td><span class="icon-quill"></span> <a href="{{ x.Link }}">{{ x.Name }}</a></td>
   </tr>
 </table>
