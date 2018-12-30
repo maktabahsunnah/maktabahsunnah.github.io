@@ -1,11 +1,18 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#/home">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Scholars</li>
+  </ol>
+</nav>
 
-
+<nav aria-label="breadcrumb">
 <ol class="breadcrumb">
   <li>Total scholars: <strong>{{totalScholars()}}</strong></li>
   <li>Sort by: </li>
   <li><a href="" ng-click="scholar = '-name'; reverse=false">Newest</a></li>
   <li><a href="" ng-click="scholar = 'name'; reverse=false">Alphabetical</a></li>
 </ol>
+</nav>
 
 
 <div ng-repeat="item in scholars | orderBy:scholar:reverse">
