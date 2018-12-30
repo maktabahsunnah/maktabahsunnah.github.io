@@ -1,11 +1,16 @@
-	{
-	    "id" : "bin-baz",
-      "name" : "Shaykh Abdul Aziz Bin Baz",
-			"books":
-				[
-					{ "bookname": "How to properly visit the grave of the Prophet", "booklink": "4" },
-					{ "bookname": "How to properly visit the grave of the Prophet", "booklink": "4" },
-					{ "bookname": "How to properly visit the grave of the Prophet", "booklink": "4" },
-					{ "bookname": "How to properly visit the grave of the Prophet", "booklink": "4" }
-				]
-	}
+{
+	"id" : "bin-baz",
+        "name" : "Shaykh Abdul Aziz Bin Baz",
+        "b1": "Advice to Muslim men desiring non-Muslim women",
+        "b2" : "How to properly visit the grave of the Prophet",
+        "b3" : "The Important Lessons For The Muslim Ummah",
+        "b4" : "Infertility is an Expiation of Sins",
+        "b5" : "Interracial Marriage in Islam",
+        "b6" : "The Ritual Acts of Umrah",
+        "b7" : "The Ruling of Intermingling with Cousins",
+        "url" : [
+            "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf",
+            "images/acacia-large.jpg",
+            "images/acacia-large.jpg"
+        ]
+}
