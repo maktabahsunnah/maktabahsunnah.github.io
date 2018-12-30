@@ -19,8 +19,8 @@
     </tr>
   </thead>
   <tbody>
-				<tr>
-					<td ng-repeat="book in books">{{scholars.books}}</td>
+				<tr ng-repeat="book in books">
+					<td>{{scholars.books[0]}}</td>
 					<td><a role="button" class="btn btn-link" href="{{scholars.url[0]}}">{{scholars.dl}}</a></td>
 				</tr>
 	    <tbody>
