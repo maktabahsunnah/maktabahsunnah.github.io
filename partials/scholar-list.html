@@ -15,10 +15,13 @@
   <li class="nav-item">
     <a class="nav-link btn btn-link" href="" ng-click="scholar = 'name'; reverse=false">Alphabetical</a>
   </li>
+  <li class="nav-item">
+    <input class="form-control" type="text" ng-model="name" placeholder="Search a scholar name...">
+  </li>
 </ul>
 <br/>
 <table class="table table-striped">
-  <tr ng-repeat="item in scholars | orderBy:scholar:reverse">
+  <tr ng-repeat="item in scholars | orderBy:scholar:reverse | filter : name">
     <td>{{ $index + 1 }}</td>
     <td><span class="icon-quill"></span> <a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
   </tr>
