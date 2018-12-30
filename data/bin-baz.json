@@ -3,13 +3,15 @@
         "name" : "Shaykh Abdul Aziz Bin Baz",
         "title" : "Title",
 	"dl" : "Download",
-        "b1": "Advice to Muslim men desiring non-Muslim women",
-        "b2" : "How to properly visit the grave of the Prophet",
-        "b3" : "The Important Lessons For The Muslim Ummah",
-        "b4" : "Infertility is an Expiation of Sins",
-        "b5" : "Interracial Marriage in Islam",
-        "b6" : "The Ritual Acts of Umrah",
-        "b7" : "The Ruling of Intermingling with Cousins",
+        "books" : [
+            "Advice to Muslim men desiring non-Muslim women",
+            "How to properly visit the grave of the Prophet peace be upon him",
+            "The Important Lessons For The Muslim Ummah",
+            "Infertility is an Expiation of Sins",
+            "Interracial Marriage in Islam",
+            "The Ritual Acts of Umrah",
+            "The Ruling of Intermingling with Cousins"
+        ],
         "url" : [
             "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf",
             "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/How_to_properly_visit_the_grave_of_the_Prophet.pdf",
