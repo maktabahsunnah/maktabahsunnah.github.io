@@ -18,6 +18,8 @@ a {
 }
 .container {
   max-width: 960px;
+  margin-top: 10px;
+  margin-bottom:70px;
 }
 
 .pricing-header {
