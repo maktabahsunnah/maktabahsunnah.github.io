@@ -4,7 +4,7 @@
     <li class="breadcrumb-item active" aria-current="page">Scholars</li>
   </ol>
 </nav>
-
+<hr/>
 <ul class="nav justify-content-center">
   <li class="nav-item">
     <a class="nav-link active" href="#">Total scholars: <strong>{{totalScholars()}}</strong></a>
@@ -16,7 +16,7 @@
     <a class="nav-link btn btn-link" href="" ng-click="scholar = 'name'; reverse=false">Alphabetical</a>
   </li>
 </ul>
-
+<br/>
 <table class="table table-striped">
   <tr ng-repeat="item in scholars | orderBy:scholar:reverse">
     <td>{{ $index + 1 }}</td>
