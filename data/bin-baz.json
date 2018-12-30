@@ -1,15 +1,9 @@
 	{
 		"id" : "bin-baz",
         "name" : "Shaykh Abdul Aziz Bin Baz",
-        "book1": 
+        "books": 
           [
-           "bookname": "Advice to Muslim men desiring non-Muslim women",
-           "booklink": "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf"],
-
-        "book2" : "How to properly visit the grave of the Prophet",
-        "book3" : "Magnoliopsida",
-        "book4" : "Fabales",
-        "book5" : "Fabaceae",
-        "book6" : "Mimosoideae",
-        "book7" : "Acacia"
+           "Advice to Muslim men desiring non-Muslim women",
+           "How to properly visit the grave of the Prophet",
+          ]
 	}
