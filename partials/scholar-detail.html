@@ -1,10 +1,9 @@
 
-	<div class="text-center">
-		<h3>{{scholars.name}}</h3>
-	</div>
-		
-	   
-	   <table class="table table-striped">
+<div class="text-center">
+ <h3>{{scholars.name}}</h3>
+</div>
+
+<table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">Title</th>
@@ -12,11 +11,16 @@
     </tr>
   </thead>
   <tbody>
-				<tr>
-<td ng-repeat="item in books>{{scholars.books}}</td>
-					<td><a class="btn btn-outline-primary" target="_blank" href="{{scholars.book1}}">Download</a></td>
-
-   </tr>
-
+	  
+<tr>
+ <td>{{scholars.books[1]}}</td>
+ <td><a class="btn btn-outline-primary" target="_blank" href="{{scholars.books[1]}}">Download</a></td>
+</tr>
+	  
+<tr>
+ <td>{{scholars.books[2]}}</td>
+ <td><a class="btn btn-outline-primary" target="_blank" href="{{scholars.books[2]}}">Download</a></td>
+</tr>
+	  
   </tbody>
-			   </table>
+</table>
