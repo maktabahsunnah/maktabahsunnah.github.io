@@ -10,13 +10,10 @@
     <a class="nav-link active" href="#">Total scholars: <strong>{{totalScholars()}}</strong></a>
   </li>
   <li class="nav-item">
-    Sort by: 
+    <a class="nav-link btn btn-link" href="" ng-click="scholar = '-name'; reverse=false">Newest</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="" ng-click="scholar = '-name'; reverse=false">Newest</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="" ng-click="scholar = 'name'; reverse=false">Alphabetical</a>
+    <a class="nav-link btn btn-link" href="" ng-click="scholar = 'name'; reverse=false">Alphabetical</a>
   </li>
 </ul>
 
