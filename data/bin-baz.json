@@ -1,8 +1,14 @@
 	{
-	"id" : "bin-baz",
-        "name" : "Shaykh Abdul Aziz Bin Baz",
-        "books" : [
-            "Advice to Muslim men desiring non-Muslim women",
-            "How to properly visit the grave of the Prophet"
-        ]
+	    "id" : "bin-baz",
+            "name" : "Shaykh Abdul Aziz Bin Baz",
+	    "books":
+		{
+			"book":
+				[
+					{ "id": "1", "bookname": "How to properly visit the grave of the Prophet" },
+					{ "id": "2", "bookname": "How to properly visit the grave of the Prophet" },
+					{ "id": "3", "bookname": "How to properly visit the grave of the Prophet" },
+					{ "id": "4", "bookname": "How to properly visit the grave of the Prophet" }
+				]
+		}
 	}
