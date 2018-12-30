@@ -3,7 +3,7 @@
 
 <table class="table table-striped">
 <tbody>
-  <tr ng-repeat="item in scholars | limitTo:10">
+  <tr ng-repeat="item in scholars | limitTo:4">
     <th scope="row">{{ $index + 1 }}</th>
     <td><span class="icon-quill"></span> <a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
   </tr>
