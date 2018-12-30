@@ -20,8 +20,8 @@
   </thead>
   <tbody>
 	  
-  <tr>
-    <td ng-repeat="(bookname, booklink) in books">{{bookname}}</td>
+  <tr ng-repeat="(bookname, booklink) in books">
+    <td>{{bookname}}</td>
     <td>
      <a role="button" class="btn btn-light" href="{{booklink}}"><span class="icon-file-pdf"></span> Download</a>
     </td>
