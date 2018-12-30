@@ -5,10 +5,10 @@
 		{
 			"book":
 				[
-					{ "id": "1", "bookname": "How to properly visit the grave of the Prophet" },
-					{ "id": "2", "bookname": "How to properly visit the grave of the Prophet" },
-					{ "id": "3", "bookname": "How to properly visit the grave of the Prophet" },
-					{ "id": "4", "bookname": "How to properly visit the grave of the Prophet" }
+					{ "bookname": "How to properly visit the grave of the Prophet", "booklink": "4" },
+					{ "bookname": "How to properly visit the grave of the Prophet", "booklink": "4" },
+					{ "bookname": "How to properly visit the grave of the Prophet", "booklink": "4" },
+					{ "bookname": "How to properly visit the grave of the Prophet", "booklink": "4" }
 				]
 		}
 	}
