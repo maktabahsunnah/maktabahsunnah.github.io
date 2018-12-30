@@ -1,6 +1,8 @@
 {
 	"id" : "bin-baz",
         "name" : "Shaykh Abdul Aziz Bin Baz",
+        "title" : "Title",
+	"dl" : "Download",
         "b1": "Advice to Muslim men desiring non-Muslim women",
         "b2" : "How to properly visit the grave of the Prophet",
         "b3" : "The Important Lessons For The Muslim Ummah",
@@ -10,7 +12,11 @@
         "b7" : "The Ruling of Intermingling with Cousins",
         "url" : [
             "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf",
-            "images/acacia-large.jpg",
-            "images/acacia-large.jpg"
+            "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/How_to_properly_visit_the_grave_of_the_Prophet.pdf",
+            "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/important-lessons-for-the-muslim-ummah-imam-ibn-baz-dr-saleh-saleh-ebook.pdf",
+            "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Infertility_is_an_expiation_of_sins.pdf",
+            "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Interracial_Marriage_in_Islam.docx.pdf",
+            "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/The_Ritual_Acts_of_Umrah.docx.pdf",
+            "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/The_Ruling_of_Intermingling_with_Cousins.docx.pdf"
         ]
 }
