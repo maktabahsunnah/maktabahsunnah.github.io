@@ -30,3 +30,12 @@
 	  
   </tbody>
 </table>
+<script>
+	for (var make in data.books) {
+    for (var i = 0; i < data.books[make].length; i++) {
+        var bookname = data.books[make][i].bookname;
+        var booklink = data.books[make][i].booklink;
+        alert(make + ', ' + bookname + ', ' + booklink);
+    }
+}
+</script>
