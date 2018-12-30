@@ -3,7 +3,7 @@
  <h3>{{scholars.name}}</h3>
 </div>
 
-<table class="table table-striped">
+<table class="table table-striped" ng-repeat="item in books">
   <thead>
     <tr>
       <th scope="col">Title</th>
@@ -12,10 +12,10 @@
   </thead>
   <tbody>
 	  
-<tr ng-repeat="scholars.books">
- <td>{{scholars.bookname}}</td>
- <td><a class="btn btn-outline-primary" target="_blank" href="{{scholars.bookname}}">Download</a></td>
-</tr>
+  <tr ng-repeat="item in book">
+    <td>{{ $index + 1 }}</td>
+    <td><span class="icon-quill"></span> <a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
+  </tr>
 	  
   </tbody>
 </table>
