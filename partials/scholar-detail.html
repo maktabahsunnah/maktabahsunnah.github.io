@@ -20,11 +20,12 @@
   </thead>
   <tbody>
 	  
-  <tr ng-repeat="data in books">
+  <tr ng-repeat="item in books">
     <td>{{ $index + 1 }}</td>
+    <td>{{item.bookname}}</td>
     <td>
      <span class="icon-file-pdf"></span>
-     <a href="{{data.booklink}}">{{data.bookname}}</a>
+     <a href="{{item.booklink}}">Download</a>
     </td>
   </tr>
 	  
