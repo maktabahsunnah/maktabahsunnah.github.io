@@ -21,9 +21,9 @@
   <tbody>
 	  
   <tr ng-repeat="scholars in books">
-    <td>{{.scholarsbookname}}</td>
+    <td>{{scholars.bookname}}</td>
     <td>
-     <a role="button" class="btn btn-light" href="{{.scholarsbooklink}}"><span class="icon-file-pdf"></span> Download</a>
+     <a role="button" class="btn btn-light" href="{{scholars.booklink}}"><span class="icon-file-pdf"></span> Download</a>
     </td>
   </tr>
 	  
