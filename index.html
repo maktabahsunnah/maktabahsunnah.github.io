@@ -1,48 +1,31 @@
-<!doctype html>
-<html lang="en" ng-app="myApp">
-  <head>
+<!DOCTYPE html>
+<html lang="en" ng-app="scholarApp">
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="assets/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+	<title ng-bind="title + ' Maktabah Sunnah' "></title>
+	
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+	<link href="assets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/fonts/style.css">
 
-    <title>Maktabah As-Sunnah</title>
+</head>
+<body>
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/fonts/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  </head>
+	<div class="navbar-wrapper" nav-bar></div>
+	<div class="container" ng-view></div>
 
-  <body>
-  <div ng-include="'assets/views/navbar.html'"></div>
-
-    <div class="container" ng-controller="customersCtrl">
-
-<table class="table table-striped">
-  <tr ng-repeat="x in names | limitTo:10">
-    <th scope="row">{{ $index + 1 }}</th>
-    <td><span class="icon-quill"></span> <a href="{{ x.Link }}">{{ x.Name }}</a></td>
-  </tr>
-</table>
-      <br/>
-      <div class="text-center"><a class="btn btn-outline-secondary" href="scholars/index.html">View all scholars</a></div>
-
-    </div>
-
-
-
-    <script src="assets/jquery-3.3.1.slim.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script>
-var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http) {
-    $http.get("assets/data/scholar-lists.html")
-    .then(function (response) {$scope.names = response.data.records;});
-});
-</script>
-  </body>
+	<!-- Javascript -->
+	<script src="js/angular.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/angular-resource.min.js"></script>
+	<script src="js/angular-sanitize.min.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/directives.js"></script>
+	<script src="js/app.js"></script>
+</body>
 </html>
