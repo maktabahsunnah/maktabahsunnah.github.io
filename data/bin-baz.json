@@ -4,12 +4,12 @@
 	"title": "Title",
 	"dl": "Download",
 	"books": [{
-			"book1": "Advice to Muslim men desiring non - Muslim women",
-			"bookurl1": "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf"
+			"book": "Advice to Muslim men desiring non - Muslim women",
+			"url": "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf"
 		},
 		{
-			"bookname2": "How to properly visit the grave of the Prophet",
-			"bookurl2": "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/How_to_properly_visit_the_grave_of_the_Prophet.pdf"
+			"book": "How to properly visit the grave of the Prophet",
+			"url": "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/How_to_properly_visit_the_grave_of_the_Prophet.pdf"
 		}
 	]
 }
