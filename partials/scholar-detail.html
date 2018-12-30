@@ -3,7 +3,7 @@
  <h3>{{scholars.name}}</h3>
 </div>
 
-<table class="table table-striped" ng-show="scholars.books.length">
+<table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">Title</th>
@@ -12,14 +12,9 @@
   </thead>
   <tbody>
 	  
-<tr>
- <td>{{scholars.books[1]}}</td>
- <td><a class="btn btn-outline-primary" target="_blank" href="{{scholars.books[1]}}">Download</a></td>
-</tr>
-	  
-<tr>
- <td>{{scholars.books[2]}}</td>
- <td><a class="btn btn-outline-primary" target="_blank" href="{{scholars.books[2]}}">Download</a></td>
+<tr ng-repeat="scholars.books">
+ <td>{{scholars.bookname}}</td>
+ <td><a class="btn btn-outline-primary" target="_blank" href="{{scholars.bookname}}">Download</a></td>
 </tr>
 	  
   </tbody>
