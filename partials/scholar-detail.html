@@ -15,16 +15,14 @@
 <table class="table table-borderless">
   <thead>
     <tr>
-      <th scope="col">#</th>
       <th scope="col">Title</th>
       <th scope="col">Download</th>
     </tr>
   </thead>
   <tbody>
     <tr ng-repeat="books in scholars track by $index">
-      <th scope="row">1</th>
-      <td>{{scholars.books}</td>
-      <td><a target="_blank" href="{{scholars.url[$index]}}">{{dl}}</a></td>
+      <td>{{scholars.books}}</td>
+      <td><a target="_blank" href="{{scholars.url[$index]}}">{{scholars.dl}}</a></td>
     </tr>
   </tbody>
 </table>
