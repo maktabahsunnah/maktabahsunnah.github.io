@@ -12,8 +12,20 @@
 </div>
 <br/>
 
-<ul class="list-unstyled" ng-repeat="books in scholars track by $index">
+<table class="table table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td ng-repeat="books in scholars track by $index">{{scholars.books[$index]}}</td>
+      <td ng-repeat="books in scholars track by $index"><a target="_blank" href="{{scholars.url[$index]}}">{{dl}}</a></td>
+    </tr>
+  </tbody>
+</table>
 
-<li><a target="_blank" href="{{scholars.url[$index]}}">{{scholars.books[$index]}}</a></li>
-
-</ul>
