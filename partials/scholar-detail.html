@@ -14,7 +14,7 @@
 
 <ul class="list-unstyled" ng-repeat="books in scholars">
 
-<li><a data-toggle="modal" data-target="#{{scholars.id}}" href="{{scholars.url[$index]}}">{{scholars.books[$index]}}</a></li>
+<li><a data-toggle="modal" data-target="#{{scholars.id}}">{{scholars.books[$index]}}</a></li>
 
 </ul>
 
@@ -30,6 +30,7 @@
             </div>
             <div class="modal-body">
                 This is a fullscreen modal
+{{scholars.url[$index]}}
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
