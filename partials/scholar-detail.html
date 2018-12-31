@@ -11,8 +11,8 @@
  <h5>{{scholars.name}}</h5>
 </div>
 
-<ul class="list-unstyled" ng-repeat="books in scholars, url in scholars">
+<ul class="list-unstyled" ng-repeat="books in scholars">
 
-<li><a href="{{url[$index]}}">{{books}}</a></li>
+<li><a href="{{scholars.url[$index]}}">{{scholars.books}}</a></li>
 
 </ul>
