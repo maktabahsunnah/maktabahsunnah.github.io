@@ -14,12 +14,12 @@
 
 <ul class="list-unstyled" ng-repeat="books in scholars">
 
-<li><a href="#{{scholars.id}}" data-toggle="modal" data-target="#{{scholars.id}}">{{scholars.books[$index]}}</a></li>
+<li><a href="#{{scholars.books[$index]}}" data-toggle="modal" data-target="#{{scholars.books[$index]}}">{{scholars.books[$index]}}</a></li>
 
 </ul>
 
 
-<div id="{{scholars.id}}" class="modal fade modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="{{scholars.id}}" aria-hidden="true">
+<div id="{{scholars.books[$index]}}" class="modal fade modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="{{scholars.id}}" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
