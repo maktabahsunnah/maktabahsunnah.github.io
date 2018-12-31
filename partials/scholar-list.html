@@ -23,7 +23,7 @@
 <table class="table table-striped">
 
 <p ng-if="scholars.length === 0">
- <span>No results found...</span>
+ <span>loading...</span>
 </p>
 
   <tr ng-repeat="item in scholars | orderBy:scholar:reverse | filter : name">
