@@ -1,9 +1,3 @@
-/*!
- * ng-flowers v1.0.0 (http://elmahdim.com/demo/Angular-Flower-Expert-App)
- * 
- * Licensed under MIT ( link )
- */
- 
 "use strict";
  
 (function(){
@@ -31,7 +25,7 @@
     app.controller('scholarPostCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
         $scope.scholars = [];
         $http.get('data/' + $routeParams.scholarId + '.json').success(function(data) { 
-            $scope.scholars = data.books;
+            $scope.scholars = data;
         });
     }]); 
 	
