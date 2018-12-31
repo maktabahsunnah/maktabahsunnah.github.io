@@ -8,21 +8,10 @@
 <hr/>
 
 <div class="text-center">
- <h3>{{scholars.name}}</h3>
+ <h5>{{scholars.name}}</h5>
 </div>
 
-	   <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">{{scholars.title}}</th>
-      <th scope="col">{{scholars.dl}}</th>
-    </tr>
-  </thead>
-  <tbody>
-				<tr ng-repeat="x in books">
-					<td>{{x.book}}</td>
-					<td><a role="button" class="btn btn-link" href="{{x.url}}">{{scholars.dl}}</a></td>
-				</tr>
-	    <tbody>
-			   </table>
+<ol ng-repeat="(book,url) in scholars">
+<li><a href="{{scholars.url[0]}}">{{scholars.book[0]}}</a></li>
+</ol>
 
