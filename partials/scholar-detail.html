@@ -11,9 +11,11 @@
  <h5>{{scholars.name}}</h5>
 </div>
 
-<ul class="list-unstyled" ng-repeat="(books, url) in scholars track by $index">
+<ul class="list-unstyled">
 
-<li><a href="{{scholars.url+1}}">{{scholars.books+1}}</a></li>
+<li ng-repeat="(books) in scholars track by $index">{{scholars.book</li>
+
+<li><a href="{{scholars.url}}">{{scholars.books}}</a></li>
 
 </ul>
 
