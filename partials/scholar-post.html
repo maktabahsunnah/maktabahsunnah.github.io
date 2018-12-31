@@ -13,6 +13,12 @@
 </div>
 <br/>
 
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button ng-click="goPrevious()" type="button" class="btn btn-secondary"><span>&lt;</span></button>
+  <button ng-click="goNext()" type="button" class="btn btn-secondary"><span>&gt;</span></button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+
 <nav ng-class="getNavStyle(scroll)">
   <button ng-click="goPrevious()"><span>&lt;</span></button>
   <button ng-click="goNext()"><span>&gt;</span></button>
