@@ -23,7 +23,7 @@
 <table class="table table-striped">
   <tr ng-repeat="item in scholars | orderBy:scholar:reverse | filter : name">
     <td>{{ $index + 1 }}</td>
-    <td><span class="icon-quill"></span> <a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
+    <td><a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
   </tr>
 </table>
 
