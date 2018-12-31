@@ -26,6 +26,10 @@
 			templateUrl: 'partials/scholar-detail.html'
 			,controller : 'scholarDetailCtrl'
 		  })
+		.when('/scholars/:scholarId/:books', {
+			templateUrl: 'partials/scholar-post.html'
+			,controller : 'scholarPostCtrl'
+		  })
 		.otherwise({
 			redirectTo: '/home'
 		  });
