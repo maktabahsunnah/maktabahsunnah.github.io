@@ -21,7 +21,11 @@
 </ul>
 <br/>
 <table class="table table-striped">
-<p ng-if="results.length === 0">No results found...</p>
+
+<p ng-if="scholars.length === 0">
+ <span>No results found...</span>
+</p>
+
   <tr ng-repeat="item in scholars | orderBy:scholar:reverse | filter : name">
     <td>{{ $index + 1 }}</td>
     <td><a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
