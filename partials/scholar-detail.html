@@ -16,13 +16,13 @@
   <thead>
     <tr>
       <th scope="col">Title</th>
-      <th scope="col">Download</th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
     <tr ng-repeat="books in scholars track by $index">
       <td>{{scholars.books[$index]}}</td>
-      <td><a target="_blank" href="#/scholars/{{item.id}}/{{scholars.book[0]}}">Read</a></td>
+      <td><a href="#/scholars/{{scholars.name}}/{{scholars.book[$index]}}">Read book</a></td>
     </tr>
   </tbody>
 </table>
