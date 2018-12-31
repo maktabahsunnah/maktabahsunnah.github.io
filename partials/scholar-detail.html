@@ -21,10 +21,10 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr ng-repeat="books in scholars track by $index">
       <th scope="row">1</th>
-      <td ng-repeat="books in scholars track by $index">{{scholars.books[$index]}}</td>
-      <td ng-repeat="books in scholars track by $index"><a target="_blank" href="{{scholars.url[$index]}}">{{dl}}</a></td>
+      <td>{{scholars.books}</td>
+      <td><a target="_blank" href="{{scholars.url[$index]}}">{{dl}}</a></td>
     </tr>
   </tbody>
 </table>
