@@ -13,7 +13,6 @@
 
 <ul class="list-unstyled">
 
-<li ng-repeat="(books, url) in scholars">{{scholars.books}}</li>
+<li ng-repeat="books in scholars.books, url in scholars.url"><a href="{{scholars.url[$index]}}">{{scholars.books}}</a></li>
 
 </ul>
-
