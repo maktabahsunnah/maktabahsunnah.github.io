@@ -2,19 +2,20 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#/home">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page"><a href="#/scholars"><span class="icon-quill"></span> Scholars</a></li>
-    <li class="breadcrumb-item active" aria-current="page">{{scholars.name}}</li>
+    <li class="breadcrumb-item active" aria-current="page"><a href="#/scholars">{{scholars.name}}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{scholars.books[0]}}</li>
   </ol>
 </nav>
 <hr/>
 
 <div class="text-center">
- <h5>{{scholars.name}}: {{scholars.books[$index]}}</h5>
+ <h5>{{scholars.name}}: {{scholars.books[0]}}</h5>
 </div>
 <br/>
 
       <pdf-viewer 
         delegate-handle="relativity-special-general-theory"
-        url="{{scholars.url[$index]}}"
+        url="{{scholars.url[0]}}"
         scale="1"
         show-toolbar="true">
       </pdf-viewer>
