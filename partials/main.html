@@ -4,13 +4,13 @@
 <tbody>
   <tr ng-repeat="item in scholars | limitTo:4">
     <th scope="row">{{ $index + 1 }}</th>
-    <td><span class="icon-quill"></span> <a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
+    <td><a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
   </tr>
 <tbody>
 </table>
 <br/>
    <div class="text-center">
-      <a role="button" class="btn btn-light" href="#/scholars">View all scholars</a>
+      <a role="button" class="btn btn-light" href="#/scholars"><span class="icon-quill"></span> View all scholars</a>
    </div>
 
 
