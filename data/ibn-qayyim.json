@@ -1,16 +1,22 @@
-	{
-		"id" : "ibn-qayyim",
-        "name" : "Ibn Qayyim al-Jawziyyah",
-        "desc" : "<p>Acacias are reffered as <b>Wattles in Australian</b>, and as <b>Acacia in Africa and America</b>. Acacia is the largest genus of vascular plants in the plant kingdom. The name Acacia is derived from the <b>Greek word akis meaning a point or barb</b>. About 1350 species of Acacia are found throughout the world. Acacia makes an excellent garden plant.</p>",
-        "kingdom": "Plantae",
-        "division" : "Magnoliophyta",
-        "class" : "Magnoliopsida",
-        "order" : "Fabales",
-        "family" : "Fabaceae",
-        "subfamily" : "Mimosoideae",
-        "genus" : "Acacia",
-        "images" : [
-            "images/acacia-small.jpg",
-            "images/acacia-large.jpg"
+{
+	"id": "ibn-qayyim",
+	"name": "Ibn Qayyim al-Jawziyyah",
+	"title": "Title",
+	"dl": "Download",
+    "books" : [
+            "Beware of oppressing animals and non Muslims",
+            "Happiness, Misery, and Signs of their People",
+            "Signs our deeds have been accepted",
+            "The Virtues of the Truthful – Abu Bakr (radiallahu anhu)",
+            "The meaning of ‘If I knew Allah had accepted one prostration from me’",
+            "The Excellence of Tawheed From the statements of Ibn al-Qayyim "
+        ],
+    "url" : [
+            "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/Beware_of_oppressing_animals_and_non_Muslims.pdf",
+            "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/Happiness,%20Misery,%20and%20Signs%20of%20their%20People.pdf",
+             "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/Signs_our_deeds_have_been_accepted.pdf",
+             "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/The%20Virtues%20of%20the%20Truthful%20-%20Abu%20Bakr.pdf", 
+             "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/The_meaning_of_if_I_knew_that_Allah_had_accepted_one_prostration.pdf",
+             "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/the-excellence-of-tawheed-from-the-statements-of-ibn-al-qayyim.pdf"
         ]
-	}
+}
