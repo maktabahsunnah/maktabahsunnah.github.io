@@ -1,13 +1,7 @@
-/*!
- * ng-flowers v1.0.0 (http://elmahdim.com/demo/Angular-Flower-Expert-App)
- * 
- * Licensed under MIT ( link )
- */
-
 "use strict";
  
 (function(){
-	var app = angular.module('scholarApp', []);
+	var app = angular.module('scholarApp', ['pdf']);
 	
 	var app = angular.module('scholarApp', [
 	  'ngRoute'
