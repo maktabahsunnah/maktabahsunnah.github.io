@@ -20,9 +20,11 @@
 </div>
 
 <nav ng-class="getNavStyle(scroll)">
-  <button ng-click="goPrevious()"><span>&lt;</span></button>
-  <button ng-click="goNext()"><span>&gt;</span></button>
- 
+  <button ng-click="goPrevious()"><i class="fas fa-arrow-left"></i></button>
+  <button ng-click="goNext()"><i class="fas fa-arrow-right"></i></button>
+
+</nav>
+
   <button ng-click="zoomIn()"><span>+</span></button>
   <button ng-click="fit()"><span>100%</span></button>
   <button ng-click="zoomOut()"><span>-</span></button>
