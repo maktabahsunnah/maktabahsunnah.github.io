@@ -21,7 +21,7 @@
   </thead>
   <tbody>
     <tr ng-repeat="books in scholars track by $index">
-      <td>{{scholars.books}}</td>
+      <td>{{scholars.books[$index]}}</td>
       <td><a target="_blank" href="{{scholars.url[$index]}}">{{scholars.dl}}</a></td>
     </tr>
   </tbody>
