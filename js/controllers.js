@@ -19,9 +19,8 @@
         $scope.scholars = [];
         $http.get('data/' + $routeParams.scholarId + '.json').success(function(data) { 
             $scope.scholars = data;
-            $scope.scholars = data.books;
-            $scope.scholars = data.booktitle;
-            $scope.scholars = data.booklink;
+            $scope.books = data.booktitle;
+            $scope.books = data.booklink;
         });
     }]); 
 	
