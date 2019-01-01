@@ -8,7 +8,7 @@
 
 <div class="input-group mb-3">
   <div class="input-group-prepend" id="button-addon3">
-    <button class="btn btn-outline-secondary" type="button" href="#/scholars/{{scholars.id}}"><i class="fas fa-angle-left"></i> back</button>
+    <a role="button" class="btn btn-outline-secondary" href="#/scholars/{{scholars.id}}"><i class="fas fa-angle-left"></i> back</a>
     <button ng-click="goPrevious()" class="btn btn-outline-secondary" type="button"><i class="fas fa-arrow-left"></i></button>
     <button ng-click="goNext()" class="btn btn-outline-secondary" type="button"><i class="fas fa-arrow-right"></i></button>
     <button ng-click="zoomIn()" class="btn btn-outline-secondary" type="button"><i class="far fa-plus-square"></i></button>
@@ -32,6 +32,4 @@
 
 <canvas id="pdf" class="rotate0"></canvas>
 
-
-<button type="submit" onclick="location.href = '#/scholars/{{scholars.id}}';">Back</button>
 
