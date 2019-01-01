@@ -18,9 +18,10 @@
     app.controller('scholarDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
         $scope.scholars = [];
         $http.get('data/' + $routeParams.scholarId + '.json').success(function(data) { 
+            $scope.scholars = data;
             $scope.scholars = data.books;
-            $scope.scholars = data.books.booktitle;
-            $scope.scholars = data.books.booklink;
+            $scope.scholars = data.booktitle;
+            $scope.scholars = data.booklink;
         });
     }]); 
 	
