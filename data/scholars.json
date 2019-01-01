@@ -2,8 +2,6 @@
 {
 	"id": "bin-baz",
 	"name": "Shaykh Abdul Aziz Bin Baz",
-	"title": "Title",
-	"dl": "Download",
     "books" : [
             "Advice to Muslim men desiring non - Muslim women",
             "How to properly visit the grave of the Prophet peace be upon him",
@@ -28,8 +26,6 @@
 {
 	"id": "ibn-qayyim",
 	"name": "Ibn Qayyim al-Jawziyyah",
-	"title": "Title",
-	"dl": "Download",
     "books" : [
             "Beware of oppressing animals and non Muslims",
             "Happiness, Misery, and Signs of their People",
