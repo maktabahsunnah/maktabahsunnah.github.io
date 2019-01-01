@@ -2,13 +2,6 @@
 .d-flex {display:none! important;}
 </style>
 
-<div share-square="true" share-links="Facebook, Twitter, LinkedIn, Google-Plus" share-title="Article Title"></div>
-
-<div class="text-center">
- <h5>{{scholars.books[0]}}</h5>
-</div>
-<br/>
-
 <nav class="fixed-top navbar navbar-light bg-light">
   <form class="form-inline">
   <a href="#/scholars/{{scholars.id}}"><i class="fas fa-angle-left"></i> back</a>
@@ -17,9 +10,21 @@
   <button ng-click="zoomIn()" type="button" class="btn-sm btn btn-secondary"><i class="far fa-plus-square"></i></button>
   <button type="button" class="btn-sm btn btn-secondary" ng-click="fit()"><span>100%</span></button>
   <button ng-click="zoomOut()" type="button" class="btn-sm btn btn-secondary"><i class="far fa-minus-square"></i></button>
+  <input class="form-control" type="text" min=1 ng-model="pageNum">
+  <span> / {{pageCount}}</span>
   </form>
 </nav>
 
+
+<div style="margin-top:60px;" class="text-center">
+ <h5>{{scholars.books[0]}}</h5>
+</div>
+<br/>
+
+
+{{loading}}
+
+<canvas id="pdf" class="rotate0"></canvas>
 
 <nav ng-class="getNavStyle(scroll)">
   <button ng-click="goPrevious()"><i class="fas fa-arrow-left"></i></button>
@@ -43,8 +48,7 @@
  
 <hr>
  
-{{loading}}
-<canvas id="pdf" class="rotate0"></canvas>
+
 
 
 
