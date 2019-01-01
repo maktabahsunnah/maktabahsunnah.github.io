@@ -1,13 +1,5 @@
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#/home">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page"><a href="#/scholars">Scholars</a></li>
-    <li class="breadcrumb-item active" aria-current="page"><a href="#/scholars/{{scholars.id}}">{{scholars.name}}</a></li>
-    <li class="breadcrumb-item active" aria-current="page">{{scholars.books[0]}}</li>
-  </ol>
-</nav>
-<hr/>
 <div share-square="true" share-links="Facebook, Twitter, LinkedIn, Google-Plus" share-title="Article Title"></div>
+
 <div class="text-center">
  <h5>{{scholars.books[0]}}</h5>
 </div>
@@ -15,9 +7,11 @@
 
 <nav class="fixed-top navbar navbar-light bg-light">
   <form class="form-inline">
+  <a href="#/scholars/{{scholars.id}}">{{scholars.name}}"><i class="fas fa-angle-left"></i> back</a>
   <button ng-click="goPrevious()" type="button" class="btn btn-sm btn-secondary"><i class="fas fa-arrow-left"></i></button>
   <button ng-click="goNext()" type="button" class="btn-sm btn btn-secondary"><i class="fas fa-arrow-right"></i></button>
   <button ng-click="zoomIn()" type="button" class="btn-sm btn btn-secondary"><i class="far fa-plus-square"></i></button>
+  <button type="button" class="btn-sm btn btn-secondary" ng-click="fit()"><span>100%</span></button>
   <button ng-click="zoomOut()" type="button" class="btn-sm btn btn-secondary"><i class="far fa-minus-square"></i></button>
   </form>
 </nav>
