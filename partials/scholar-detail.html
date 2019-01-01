@@ -20,9 +20,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="scholars.booktitle in scholars, scholars.booklink in scholars">
-      <td>{{scholars.booktitle[$index]}}</td>
-      <td><a href="#/scholars/{{scholars.id}}/{{scholars.bookurl[$index]}}">Read</a></td>
+    <tr ng-repeat="books.booktitle in scholars, books.booklink in scholars">
+      <td>{{books.booktitle[$index]}}</td>
+      <td><a href="#/scholars/{{scholars.id}}/{{books.booklink[$index]}}">Read</a></td>
     </tr>
   </tbody>
 </table>
