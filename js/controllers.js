@@ -25,7 +25,7 @@
     app.controller('scholarPostCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
         $scope.scholars = [];
         $http.get('data/' + $routeParams.scholarId + '.json').success(function(data) { 
-            $scope.scholars = data;
+            $scope.scholars = data;$scope.selectedBook = $scope.books[0].book;
         });
     }]); 
 	
