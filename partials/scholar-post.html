@@ -10,9 +10,14 @@
   <button ng-click="zoomIn()" type="button" class="btn-sm btn btn-secondary"><i class="far fa-plus-square"></i></button>
   <button type="button" class="btn-sm btn btn-secondary" ng-click="fit()"><span>100%</span></button>
   <button ng-click="zoomOut()" type="button" class="btn-sm btn btn-secondary"><i class="far fa-minus-square"></i></button>
-  <input class="form-control" type="text" min=1 ng-model="pageNum">
-  <span> / {{pageCount}}</span>
-  </form>
+
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text" id="btnGroupAddon">{{pageCount}}</div>
+    </div>
+    <input type="text" min=1 ng-model="pageNum" class="form-control" aria-label="Input group example" aria-describedby="btnGroupAddon">
+  </div>
+
 </nav>
 
 
@@ -25,4 +30,5 @@
 {{loading}}
 
 <canvas id="pdf" class="rotate0"></canvas>
+
 
