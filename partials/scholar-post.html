@@ -11,7 +11,7 @@
   <button type="button" class="btn-sm btn btn-secondary" ng-click="fit()"><span>100%</span></button>
   <button ng-click="zoomOut()" type="button" class="btn-sm btn btn-secondary"><i class="far fa-minus-square"></i></button>
 
-  <div class="input-group">
+  <div class="mb-3 input-group">
     <div class="input-group-prepend">
       <div class="input-group-text" id="btnGroupAddon">{{pageCount}}</div>
     </div>
@@ -26,7 +26,13 @@
 </div>
 <br/>
 
-
+<div class="input-group mb-3">
+  <div class="input-group-prepend" id="button-addon3">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+  <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" aria-describedby="button-addon3">
+</div>
 {{loading}}
 
 <canvas id="pdf" class="rotate0"></canvas>
