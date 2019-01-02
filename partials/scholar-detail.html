@@ -2,12 +2,12 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#/home">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page"><a href="#/scholars">Scholars</a></li>
-    <li class="breadcrumb-item active" aria-current="page"></li>
+    <li class="breadcrumb-item active" aria-current="page" ng-repeat-start="book in books">{{book.scholar}}</li>
   </ol>
 </nav>
 <hr/>
   
-          <h5 class="text-center" ng-repeat-start="book in books"> {{book.scholar}}</h5>
+          <h5 class="text-center" ng-repeat-start="book in books">{{book.scholar}}</h5>
 
           <p ng-repeat-end ng-repeat="m in book.book">
             <a href="{{m.url}}">{{m.title}}</a>
