@@ -16,7 +16,7 @@
     }]);
 	
   app.controller('scholarDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
-    $http.get('sample.json').success(function(data) {
+    $http.get('data/' + $routeParams.scholarId + '.json').success(function(data) {
         $scope.books = [];
         angular.forEach(data.books, function(value, key) {
             $scope.books.push(value);
