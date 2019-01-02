@@ -9,9 +9,7 @@ html {
 body {
 
 }
-a {
-  color: #003b00! important;
-}
+
 .container-fluid {
   background-image: url("pattern.png");
   background-repeat: repeat-x;
