@@ -5,9 +5,10 @@
 	
 	var app = angular.module('scholarApp', [
 	  'ngRoute'
-	  , 'ngSanitize'
+	  ,'ngSanitize'
 	  ,'scholarCtrls'
 	  ,'scholarDirectives'
+	  ,'pdfDelegate'
 	]);
 	
 	app.config(['$routeProvider',
