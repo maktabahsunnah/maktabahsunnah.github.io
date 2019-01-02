@@ -2,32 +2,35 @@
 	"id": "bin-baz",
 	"name": "Shaykh Abdul Aziz Bin Baz",
 	"books": [{
-			"title": "Advice to Muslim men desiring non - Muslim women",
-			"url": "/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf"
-		},
-		{
-			"title": "How to properly visit the grave of the Prophet peace be upon him",
-			"url": "/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf"
-		},
-		{
-			"title": "The Important Lessons For The Muslim Ummah",
-			"url": "/scholars/bin-baz/pdf/important-lessons-for-the-muslim-ummah-imam-ibn-baz-dr-saleh-saleh-ebook.pdf"
-		},
-		{
-			"title": "Infertility is an Expiation of Sins",
-			"url": "/scholars/bin-baz/pdf/Infertility_is_an_expiation_of_sins.pdf"
-		},
-		{
-			"title": "Interracial Marriage in Islam",
-			"url": "/scholars/bin-baz/pdf/Interracial_Marriage_in_Islam.docx.pdf"
-		},
-		{
-			"title": "The Ritual Acts of Umrah",
-			"url": "/scholars/bin-baz/pdf/The_Ritual_Acts_of_Umrah.docx.pdf"
-		},
-		{
-			"title": "The Ruling of Intermingling with Cousins",
-			"url": "/scholars/bin-baz/pdf/The_Ruling_of_Intermingling_with_Cousins.docx.pdf"
-		}
-	]
+		"scholar": "Shaykh Abdul Aziz Bin Baz",
+		"book": [{
+				"title": "Advice to Muslim men desiring non - Muslim women",
+				"url": "/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf"
+			},
+			{
+				"title": "How to properly visit the grave of the Prophet peace be upon him",
+				"url": "/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf"
+			},
+			{
+				"title": "The Important Lessons For The Muslim Ummah",
+				"url": "/scholars/bin-baz/pdf/important-lessons-for-the-muslim-ummah-imam-ibn-baz-dr-saleh-saleh-ebook.pdf"
+			},
+			{
+				"title": "Infertility is an Expiation of Sins",
+				"url": "/scholars/bin-baz/pdf/Infertility_is_an_expiation_of_sins.pdf"
+			},
+			{
+				"title": "Interracial Marriage in Islam",
+				"url": "/scholars/bin-baz/pdf/Interracial_Marriage_in_Islam.docx.pdf"
+			},
+			{
+				"title": "The Ritual Acts of Umrah",
+				"url": "/scholars/bin-baz/pdf/The_Ritual_Acts_of_Umrah.docx.pdf"
+			},
+			{
+				"title": "The Ruling of Intermingling with Cousins",
+				"url": "/scholars/bin-baz/pdf/The_Ruling_of_Intermingling_with_Cousins.docx.pdf"
+			}
+		]
+	}]
 }
