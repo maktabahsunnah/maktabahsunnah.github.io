@@ -16,12 +16,13 @@
     }]);
 	
     app.controller('scholarDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
-        $scope.scholars = [];
-        $http.get('data/' + $routeParams.scholarId + '.json').success(function(data) { 
-            $scope.scholars = data;
-            $scope.books = data.title;
-            $scope.books = data.url;
+        $scope.books = [];
+        angular.forEach(data.books, function(value, key) {
+            $scope.books.push(value);
         });
+        $scope.isVisible = function(name){
+            return true;
+        };
     }]); 
 	
     app.controller('scholarPostCtrl', ['$http', '$scope', '$routeParams', function($http, $scope, $routeParams){
