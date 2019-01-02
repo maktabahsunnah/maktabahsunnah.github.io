@@ -1,31 +1,31 @@
-{
+﻿{
 	"id": "ibn-qayyim",
 	"name": "Ibn Qayyim al-Jawziyyah",
 	"books": [{
 		"scholar": "Ibn Qayyim al-Jawziyyah",
 		"book": [{
 				"title": "Retribution for oppressing animals, non-Muslims and Muslims",
-				"url": "/scholars/ibn-qayyim/pdf/Beware_of_oppressing_animals_and_non_Muslims.pdf"
+				"url": "/data/scholars/ibn-qayyim/pdf/Beware_of_oppressing_animals_and_non_Muslims.pdf"
 			},
 			{
 				"title": "Happiness, Misery, and Signs of Their People",
-				"url": "/scholars/ibn-qayyim/pdf/Happiness,%20Misery,%20and%20Signs%20of%20their%20People.pdf"
+				"url": "/data/scholars/ibn-qayyim/pdf/Happiness,%20Misery,%20and%20Signs%20of%20their%20People.pdf"
 			},
 			{
 				"title": "From the Signs our Deeds have been accepted",
-				"url": "/scholars/ibn-qayyim/pdf/Signs_our_deeds_have_been_accepted.pdf"
+				"url": "/data/scholars/ibn-qayyim/pdf/Signs_our_deeds_have_been_accepted.pdf"
 			},
 			{
 				"title": "The Virtues of the Truthful – Abu Bakr (Ra)",
-				"url": "/scholars/ibn-qayyim/pdf/The%20Virtues%20of%20the%20Truthful%20-%20Abu%20Bakr.pdf"
+				"url": "/data/scholars/ibn-qayyim/pdf/The%20Virtues%20of%20the%20Truthful%20-%20Abu%20Bakr.pdf"
 			},
 			{
 				"title": "The meaning of ‘If I knew Allah had accepted one prostration from me’",
-				"url": "/scholars/ibn-qayyim/pdf/The_meaning_of_if_I_knew_that_Allah_had_accepted_one_prostration.pdf"
+				"url": "/data/scholars/ibn-qayyim/pdf/The_meaning_of_if_I_knew_that_Allah_had_accepted_one_prostration.pdf"
 			},
 			{
 				"title": "The Excellence of Tawheed From the statements of Ibn al-Qayyim",
-				"url": "/scholars/ibn-qayyim/pdf/the-excellence-of-tawheed-from-the-statements-of-ibn-al-qayyim.pdf"
+				"url": "/data/scholars/ibn-qayyim/pdf/the-excellence-of-tawheed-from-the-statements-of-ibn-al-qayyim.pdf"
 			}
 		]
 	}]
