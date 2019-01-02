@@ -6,9 +6,11 @@
 <hr/>
   
 <h5 class="text-center" ng-repeat-start="book in books">{{book.scholar}}</h5>
-<p>Total books: {{totalBooks()}}</p>
 <br/>
-<p ng-repeat-end ng-repeat="m in book.book">
- <a href="{{m.url}}">{{m.title}}</a>
-</p>
-      
+
+<ul class="list-group" ng-repeat-end ng-repeat="m in book.book" ng-show="isVisible(book.title)">
+ <li class="list-group-item d-flex justify-content-between align-items-center">
+ <a class="btn btn-link" role="button" target="_blank" href="{{m.url}}"><span>{{m.title}}</span></a>
+ </li>
+</ul>
+
