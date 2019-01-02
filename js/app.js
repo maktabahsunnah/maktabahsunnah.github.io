@@ -4,11 +4,11 @@
 	var app = angular.module('scholarApp', ['pdf']);
 	
 	var app = angular.module('scholarApp', [
-	  'ngRoute'
-	  ,'ngSanitize'
-	  ,'scholarCtrls'
-	  ,'scholarDirectives'
-	  ,'pdfDelegate'
+	  'ngRoute',
+	  'ngSanitize',
+	  'scholarCtrls',
+	  'scholarDirectives',
+	  'pdfDelegate'
 	]);
 	
 	app.config(['$routeProvider',
