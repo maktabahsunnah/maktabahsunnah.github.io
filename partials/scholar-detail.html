@@ -1,16 +1,14 @@
-
-  <div ng-repeat-start="book in books">
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#/home">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page"><a href="#/scholars">Scholars</a></li>
-    <li class="breadcrumb-item active" aria-current="page">{{book.scholar}}</li>
+    <li class="breadcrumb-item active" aria-current="page"></li>
   </ol>
 </nav>
 <hr/>
   
-<div class="text-center">
- <h5>{{book.scholar}} test2</h5>
+<div class="text-center" ng-repeat-start="book in books">
+ <h5>{{book.scholar}} test3</h5>
 </div>
   </div>
   
