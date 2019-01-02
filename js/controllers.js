@@ -16,15 +16,16 @@
     }]);
 	
     app.controller('scholarDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
+    $http.get('data/' + $routeParams.scholarId + '.json').success(function(data) {
         $scope.books = [];
-	$http.get('data/' + $routeParams.scholarId + '.json').success(function(data) {
         angular.forEach(data.books, function(value, key) {
             $scope.books.push(value);
         });
         $scope.isVisible = function(name){
-            return true;
+            return true;// return false to hide this artist's albums
         };
-    }); 
+    });
+    }    
 	
     app.controller('scholarPostCtrl', ['$http', '$scope', '$routeParams', function($http, $scope, $routeParams){
         $scope.scholars = [];
