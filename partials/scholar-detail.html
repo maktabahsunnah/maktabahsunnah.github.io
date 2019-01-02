@@ -15,8 +15,7 @@
 <table class="table table-borderless">
   <tbody>
     <tr>
-      <td ng-repeat="title in scholars">{{books.title}}</td>
-      <td><a href="#/scholars/{{scholars.id}}/{{scholars.url}}">Read</a></td>
+      <td ng-repeat="title in scholars"><a href="#/scholars/{{scholars.id}}/{{scholars.url}}">{{books.title}}</a></td>
     </tr>
   </tbody>
 </table>
