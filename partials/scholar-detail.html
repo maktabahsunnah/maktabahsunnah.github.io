@@ -22,8 +22,8 @@
   </thead>
   <tbody>
     <tr ng-repeat="books in scholars">
-      <td>{{scholars.books[$index]}}</td>
-      <td><a href="#/scholars/{{scholars.id}}/{{scholars.books[$index]}}">Read</a></td>
+      <td>{{scholars.title}}</td>
+      <td><a href="#/scholars/{{scholars.id}}/{{scholars.url}}">Read</a></td>
     </tr>
   </tbody>
 </table>
