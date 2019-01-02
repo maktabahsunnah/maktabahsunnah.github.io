@@ -24,7 +24,7 @@
         $scope.isVisible = function(name){
             return true;
         };
-    }]); 
+    }); 
 	
     app.controller('scholarPostCtrl', ['$http', '$scope', '$routeParams', function($http, $scope, $routeParams){
         $scope.scholars = [];
