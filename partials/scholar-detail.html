@@ -11,11 +11,11 @@
  <h5>{{scholars.name}}</h5>
 </div>
 <br/>
-<p>Test 1</p>
+<p>Test 2</p>
 <table class="table table-borderless">
   <tbody>
     <tr>
-      <td ng-repeat="books in scholars"><a href="#/scholars/{{scholars.id}}/{{scholars.url}}">{{books.title}}</a></td>
+      <td ng-repeat="(title,url) in scholars"><a href="#/scholars/{{scholars.id}}/{{scholars.url}}">{{scholars.title}}</a></td>
     </tr>
   </tbody>
 </table>
