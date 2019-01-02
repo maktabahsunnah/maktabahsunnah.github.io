@@ -6,7 +6,7 @@
      app.controller('scholarListCtrl', ['$http', '$scope', function($http, $scope){
         $scope.scholars = [];
 
-        $http.get('data/scholars.json').success(function(data) {
+        $http.get('../../data/json/scholars.json').success(function(data) {
             $scope.scholars = data;
         });
 		
@@ -16,7 +16,7 @@
     }]);
 	
   app.controller('scholarDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
-    $http.get('data/' + $routeParams.scholarId + '.json').success(function(data) {
+    $http.get('../../data/json/' + $routeParams.scholarId + '.json').success(function(data) {
         $scope.books = [];
         angular.forEach(data.books, function(value, key) {
             $scope.books.push(value);

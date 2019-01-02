@@ -15,15 +15,15 @@
 		$routeProvider
 		.when('/home', {
 			title: 'Maktabah As-Sunnah'
-			,templateUrl: 'partials/main.html'
+			,templateUrl: '../partials/main.html'
 		  })
 		.when('/scholars', {
 			title: 'Scholars List'
-			,templateUrl: 'partials/scholar-list.html'
+			,templateUrl: '../partials/scholar-list.html'
 			,controller : 'scholarListCtrl'
 		  })
 		.when('/scholars/:scholarId', {
-			templateUrl: 'partials/scholar-detail.html'
+			templateUrl: '../partials/scholar-detail.html'
 			,controller : 'scholarDetailCtrl'
 		  })
 		.otherwise({
