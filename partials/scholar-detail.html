@@ -10,7 +10,8 @@
 <div class="text-center">
  <h5>{{scholars.name}}</h5>
 </div>
-<br/>
+<br/>
+
 
 <table class="table table-borderless">
   <thead>
@@ -20,8 +21,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="booktitle in scholars, booklink in scholars">
-      <td ng-repeat="booktitle in scholars">{{booktitle}}</td>
+    <tr ng-repeat="books in scholars, url in scholars">
+      <td ng-repeat="books in scholars">{{booktitle}}</td>
       <td ng-repeat="booklink in scholars"><a href="#/scholars/{{scholars.id}}/{{booklink}}">Read</a></td>
     </tr>
   </tbody>
