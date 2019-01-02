@@ -24,6 +24,9 @@
         $scope.isVisible = function(name){
             return true;
         };
+		 $scope.totalBooks = function(){
+			return $scope.books.length;
+		};
     });
   }]); 
 	
