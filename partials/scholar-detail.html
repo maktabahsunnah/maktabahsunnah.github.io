@@ -7,18 +7,9 @@
 </nav>
 <hr/>
   
-<div class="text-center" ng-repeat-start="book in books">
- <h5>{{book.scholar}} test3</h5>
-</div>
-  </div>
-  
-<table class="table table-borderless">
-  <tbody>
-    <tr>
-      <td ng-repeat-end ng-repeat="m in book.book">
-        <a href="{{m.url}}">{{m.title}}</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+          <h5 class="text-center" ng-repeat-start="book in books"> {{book.scholar}}</h5>
 
+          <p ng-repeat-end ng-repeat="m in book.book">
+            <a href="{{m.url}}">{{m.title}}</a>
+          </p>
+      
