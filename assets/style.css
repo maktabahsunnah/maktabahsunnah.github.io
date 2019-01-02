@@ -53,3 +53,8 @@ a {
   min-height: 100%;
   border-radius: 0;
   border: none; }
+      .badge, .list-group-item {
+        border:0!important;
+        border-radius:0!important;
+        padding:8px;
+      }
