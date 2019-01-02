@@ -1,7 +1,7 @@
 "use strict";
  
 (function(){
-	var app = angular.module('scholarCtrls', []);
+     var app = angular.module('scholarCtrls', []);
 	  
      app.controller('scholarListCtrl', ['$http', '$scope', function($http, $scope){
         $scope.scholars = [];
@@ -17,6 +17,7 @@
 	
     app.controller('scholarDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
         $scope.books = [];
+	$http.get('data/' + $routeParams.scholarId + '.json').success(function(data) {
         angular.forEach(data.books, function(value, key) {
             $scope.books.push(value);
         });
