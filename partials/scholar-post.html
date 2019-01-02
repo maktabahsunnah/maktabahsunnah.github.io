@@ -29,12 +29,9 @@
 </div>
 <br/>
 
-
-      <pdf-viewer 
-        delegate-handle="relativity-special-general-theory"
-        url="pdfUrl"
-        scale="1"
-        show-toolbar="true"></pdf-viewer>
+<div class="embed-responsive embed-responsive-16by9" ng-repeat-start ng-repeat="m in book.book">
+  <iframe class="embed-responsive-item" src="{{m.url}}" allowfullscreen></iframe>
+</div>
 
 
 <nav class="navbar-light bg-light nav justify-content-center fixed-bottom">
