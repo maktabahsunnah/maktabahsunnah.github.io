@@ -7,8 +7,7 @@
 	  'ngRoute',
 	  'ngSanitize',
 	  'scholarCtrls',
-	  'scholarDirectives',
-	  'scholarPostCtrl'
+	  'scholarDirectives'
 	]);
 	
 	app.config(['$routeProvider',
