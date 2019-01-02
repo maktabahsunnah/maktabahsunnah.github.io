@@ -1,16 +1,37 @@
-	{
-		"id" : "fawzan",
-        "name" : "Shaykh Salih bin Fawzan al-Fawzan",
-        "desc" : "<p>Acacias are reffered as <b>Wattles in Australian</b>, and as <b>Acacia in Africa and America</b>. Acacia is the largest genus of vascular plants in the plant kingdom. The name Acacia is derived from the <b>Greek word akis meaning a point or barb</b>. About 1350 species of Acacia are found throughout the world. Acacia makes an excellent garden plant.</p>",
-        "kingdom": "Plantae",
-        "division" : "Magnoliophyta",
-        "class" : "Magnoliopsida",
-        "order" : "Fabales",
-        "family" : "Fabaceae",
-        "subfamily" : "Mimosoideae",
-        "genus" : "Acacia",
-        "images" : [
-            "images/acacia-small.jpg",
-            "images/acacia-large.jpg"
-        ]
-	}
+{
+	"id": "fawzan",
+	"name": "Shaykh Salih Bin Fawzan al-Fawzan",
+	"books": [{
+		"scholar": "Shaykh Salih Bin Fawzan al-Fawzan",
+
+		"book": [{
+				"title": "Accepting Christmas gifts and non Christmas gifts",
+				"url": "/scholars/fawzan/pdf/Accepting_Christmas_gifts_and_non_Christmas_gifts.pdf"
+			},
+			{
+				"title": "Be patient upon this Minhaj if you want to drink from the Pond",
+				"url": "/scholars/bin-fawzan/pdf/Be_patient_upon_this_Minhaj_if_you_want_to_drink_from_the_Pond.pdf"
+			},
+			{
+				"title": "Is it allowed to going to circus?",
+				"url": "/scholars/fawzan/pdf/Circus.pdf"
+			},
+			{
+				"title": "Dictionary of dreams not by Ibn Seerin",
+				"url": "/scholars/fawzan/pdf/Dictionary_of_dreams_not_by_Ibn_Seerin.pdf"
+			},
+			{
+				"title": "Do not call me by my Muslim name",
+				"url": "/scholars/fawzan/pdf/Do_not_call_me_by_my_Muslim_name.pdf"
+			},
+			{
+				"title": "Does this Hadith validate criticizing the rulers via the internet",
+				"url": "/scholars/fawzan/pdf/Does_this_Hadith_validate_criticizing_the_rulers_via_the_internet.pdf"
+			},
+			{
+				"title": "During the Last Days Sudden Death will Increase",
+				"url": "/scholars/fawzan/pdf/During_the_Last_Days_Sudden_Death_will_Increase.pdf"
+			}
+		]
+	}]
+}
