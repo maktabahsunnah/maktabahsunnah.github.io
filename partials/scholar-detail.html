@@ -21,7 +21,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="books in scholars">
+    <tr ng-repeat="books.title in scholars">
       <td>{{scholars.books.title}}</td>
       <td><a href="#/scholars/{{scholars.id}}/{{scholars.url}}">Read</a></td>
     </tr>
