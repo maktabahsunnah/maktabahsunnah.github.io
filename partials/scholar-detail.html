@@ -2,19 +2,19 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#/home">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page"><a href="#/scholars">Scholars</a></li>
-    <li class="breadcrumb-item active" aria-current="page">{{scholars.name}}</li>
+    <li class="breadcrumb-item active" aria-current="page">{{book.scholar}}</li>
   </ol>
 </nav>
 <hr/>
 
 <div class="text-center">
- <h5>{{scholars.name}}</h5>
+ <h5>{{book.scholar}}}</h5>
 </div>
 <br/>
-<p>Test 3</p>
+<p>Test 4</p>
       <ul>
           <li ng-repeat-start="book in books">
-            <strong> {{book.scholar}}</strong>
+            <strong>{{book.scholar}}</strong>
           </li>
           <li ng-repeat-end ng-repeat="m in book.book"><a href="{{m.url}}">{{m.title}}</a></li>
       </ul>
