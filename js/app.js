@@ -1,7 +1,7 @@
 "use strict";
  
 (function(){
-	var app = angular.module('scholarApp', ['pdf']);
+	var app = angular.module('scholarApp', []);
 	
 	var app = angular.module('scholarApp', [
 	  'ngRoute',
@@ -25,10 +25,6 @@
 		.when('/scholars/:scholarId', {
 			templateUrl: 'partials/scholar-detail.html'
 			,controller : 'scholarDetailCtrl'
-		  })
-		.when('/scholars/:scholarId/:books', {
-			templateUrl: 'partials/scholar-post.html'
-			,controller : 'scholarPostCtrl'
 		  })
 		.otherwise({
 			redirectTo: '/home'
