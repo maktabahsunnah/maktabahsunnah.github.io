@@ -1,41 +1,26 @@
-<div ng-controller="blogCtrl">
-Free e-books:</h5>
+<h5>Free e-books</h5>
+<div class="card" style="width: 18rem;" ng-controller="scholarListCtrl">
+  <div class="card-header">
+    <span class="icon-quill"></span> Scholars
+   <a role="button" class="btn btn-light" href="#/scholars"><span class="icon-quill"></span> View all</a>
+  </div>
+  <ul ng-repeat="item in scholars | limitTo:4" class="list-group list-group-flush">
+    <a href="#/scholars/{{item.id}}"><li class="list-group-item">{{item.name}}</li></a>
+  </ul>
+</div>
+
+
 <br/>
+
+<div ng-controller="blogCtrl">
+<h5>Latest articles</h5>
 <div class="card">
-  <h5 class="card-header"><span class="icon-quill"></span> Scholars</h5>
-  <div class="card-body">
-<table class="table table-striped" ng-controller="scholarListCtrl">
-<tbody>
-  <tr ng-repeat="item in scholars | limitTo:4">
-    <th scope="row">{{ $index + 1 }}</th>
-    <td><a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
-  </tr>
-<tbody>
-</table>
-</div>
-</div>
-
-   <div class="text-center">
-      <a role="button" class="btn btn-light" href="#/scholars"><span class="icon-quill"></span> View all scholars</a>
-   </div>
-
-</div>
-
-<br/>
-
-<div ng-controller="blogCtrl">
-
-<div class="card" ng-repeat="item in blog | limitTo:2">
-  <h5 class="card-header"><i class="far fa-file-alt"></i> Articles</h5>
-  <div class="card-body">
+  <h5 class="card-header"><i class="far fa-file-alt"></i> Articles <a href="#/blog" class="btn btn-primary">View all</a></h5>
+  <div ng-repeat="item in blog | limitTo:2" class="card-body">
     <h5 class="card-title"><a href="#/blog/{{item.id}}">{{item.title}}</a></h5>
     <p class="card-text">{{item.desc}}</p>
   </div>
 </div>
-<br/>
-   <div class="text-center">
-    <a href="#/blog" class="btn btn-primary">View all entries</a>
-   </div>
 </div>
 
 
