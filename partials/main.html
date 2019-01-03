@@ -16,7 +16,7 @@
 
 <div ng-controller="blogCtrl">
 <div class="card">
-  <h5 class="card-header"><i class="far fa-file-alt"></i> Articles <a href="#/blog" class="btn btn-primary">View all</a></h5>
+  <h5 class="card-header"><i class="far fa-file-alt"></i> Articles <a href="#/blog" class="float-right btn btn-primary">View all</a></h5>
   <div ng-repeat="item in blog | limitTo:2" class="card-body">
     <h5 class="card-title"><a href="#/blog/{{item.id}}">{{item.title}}</a></h5>
     <p class="card-text">{{item.desc}}</p>
