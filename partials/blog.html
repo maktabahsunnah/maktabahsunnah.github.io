@@ -6,21 +6,9 @@
   </ol>
 </nav>
 <hr/>
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" href="javascript:void(0)">Total Articles: <strong>{{totalBlog()}}</strong></a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link btn btn-link" href="" ng-click="blog = '-title'; reverse=false">Newest</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link btn btn-link" href="" ng-click="blog = 'title'; reverse=false">Alphabetical</a>
-  </li>
-  <li class="nav-item">
-    <input class="form-control" type="text" ng-model="title" placeholder="Filter articles...">
-  </li>
-</ul>
-<br/>
+<p>Total Articles: <strong>{{totalBlog()}}</strong></p>
+
+
 <table class="table table-striped">
 
 <p ng-if="blog.length === 0">
