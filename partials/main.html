@@ -1,8 +1,8 @@
 
 <div class="card" ng-controller="scholarListCtrl">
-  <div class="card-header">
-<div class="d-flex bd-highlight">
-  <div class="p-2 flex-fill bd-highlight"><i class="fas fa-book"></i> <h5>E-Books</h5></div>
+
+  <h5 class="align-middle card-header"><i class="fas fa-book"></i> Articles <a href="#/scholars" class="float-right btn btn-primary">View all</a></h5>
+
   <div class="p-2 flex-fill bd-highlight"><a role="button" class="float-right btn btn-primary" href="#/scholars">View all</a></div>
 </div>
   </div>
@@ -16,7 +16,7 @@
 
 <div ng-controller="blogCtrl">
 <div class="card">
-  <h5 class="card-header"><i class="far fa-file-alt"></i> Articles <a href="#/blog" class="float-right btn btn-primary">View all</a></h5>
+  <h5 class="align-middle card-header"><i class="far fa-file-alt"></i> Articles <a href="#/blog" class="float-right btn btn-primary">View all</a></h5>
   <div ng-repeat="item in blog | limitTo:2" class="card-body">
     <h5 class="card-title"><a href="#/blog/{{item.id}}">{{item.title}}</a></h5>
     <p class="card-text">{{item.desc}}</p>
