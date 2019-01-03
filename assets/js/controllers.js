@@ -44,7 +44,7 @@
         $scope.blog = [];
 
         $http.get('../../data/blog/blog.json').success(function(data) {
-            $scope.scholars = data;
+            $scope.blog = data;
         });
 		
 		 $scope.totalBlog = function(){
