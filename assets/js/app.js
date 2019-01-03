@@ -29,11 +29,11 @@
 		.when('/blog', {
 			title: 'Scholars List'
 			,templateUrl: '../partials/blog.html'
-			,controller : 'scholarListCtrl'
+			,controller : 'blogCtrl'
 		  })
 		.when('/blog/:blogId', {
 			templateUrl: '../partials/blog-detail.html'
-			,controller : 'scholarDetailCtrl'
+			,controller : 'blogDetailCtrl'
 		  })
 		.otherwise({
 			redirectTo: '/home'

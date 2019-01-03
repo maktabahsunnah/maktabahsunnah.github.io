@@ -32,3 +32,38 @@
 	
 	
 })();
+
+"use strict";
+ 
+(function(){
+     var app = angular.module('blogCtrls', []);
+	  
+     app.controller('blogCtrl', ['$http', '$scope', function($http, $scope){
+        $scope.blog = [];
+
+        $http.get('../../data/json/blog.json').success(function(data) {
+            $scope.scholars = data;
+        });
+		
+		 $scope.totalBlog = function(){
+			return $scope.blog.length;
+		};
+    }]);
+	
+  app.controller('blogDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
+    $http.get('../../data/json/' + $routeParams.blogId + '.json').success(function(data) {
+        $scope.books = [];
+        angular.forEach(data.books, function(value, key) {
+            $scope.books.push(value);
+        });
+        $scope.isVisible = function(name){
+            return true;
+        };
+		 $scope.totalBooks = function(){
+			return $scope.books.length;
+		};
+    });
+  }]); 
+	
+	
+})();

@@ -1,0 +1,85 @@
+[
+{
+	"id": "bin-baz",
+	"name": "Shaykh Abdul Aziz Bin Baz",
+    "books" : [
+            "Advice to Muslim men desiring non - Muslim women",
+            "How to properly visit the grave of the Prophet peace be upon him",
+            "The Important Lessons For The Muslim Ummah",
+            "Infertility is an Expiation of Sins",
+            "Interracial Marriage in Islam",
+            "The Ritual Acts of Umrah",
+            "The Ruling of Intermingling with Cousins"
+        ],
+
+    "url" : [
+            "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Advice_to_Muslim_men_who_want_to_marry.pdf",
+            "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/How_to_properly_visit_the_grave_of_the_Prophet.pdf",
+             "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/important-lessons-for-the-muslim-ummah-imam-ibn-baz-dr-saleh-saleh-ebook.pdf",
+             "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Infertility_is_an_expiation_of_sins.pdf", 
+             "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/Interracial_Marriage_in_Islam.docx.pdf",
+             "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/The_Ritual_Acts_of_Umrah.docx.pdf",
+             "https://maktabahsunnah.github.io/scholars/bin-baz/pdf/The_Ruling_of_Intermingling_with_Cousins.docx.pdf"
+        ]
+},
+
+{
+	"id": "ibn-qayyim",
+	"name": "Ibn Qayyim al-Jawziyyah",
+    "books" : [
+            "Beware of oppressing animals and non Muslims",
+            "Happiness, Misery, and Signs of their People",
+            "Signs our deeds have been accepted",
+            "The Virtues of the Truthful – Abu Bakr (radiallahu anhu)",
+            "The meaning of ‘If I knew Allah had accepted one prostration from me’",
+            "The Excellence of Tawheed From the statements of Ibn al-Qayyim "
+        ],
+    "url" : [
+            "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/Beware_of_oppressing_animals_and_non_Muslims.pdf",
+            "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/Happiness,%20Misery,%20and%20Signs%20of%20their%20People.pdf",
+             "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/Signs_our_deeds_have_been_accepted.pdf",
+             "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/The%20Virtues%20of%20the%20Truthful%20-%20Abu%20Bakr.pdf", 
+             "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/The_meaning_of_if_I_knew_that_Allah_had_accepted_one_prostration.pdf",
+             "https://github.com/maktabahsunnah/maktabahsunnah.github.io/blob/master/scholars/ibn-qayyim/pdf/the-excellence-of-tawheed-from-the-statements-of-ibn-al-qayyim.pdf"
+        ]
+},
+
+{
+	"id": "fawzan",
+	"name": "Shaykh Salih Bin Fawzan al-Fawzan",
+	"books": [{
+		"scholar": "Shaykh Salih Bin Fawzan al-Fawzan",
+
+		"book": [{
+				"title": "Accepting Christmas gifts and non Christmas gifts",
+				"url": "/scholars/fawzan/pdf/Accepting_Christmas_gifts_and_non_Christmas_gifts.pdf"
+			},
+			{
+				"title": "Be patient upon this Minhaj if you want to drink from the Pond",
+				"url": "/scholars/bin-fawzan/pdf/Be_patient_upon_this_Minhaj_if_you_want_to_drink_from_the_Pond.pdf"
+			},
+			{
+				"title": "Is it allowed to going to circus?",
+				"url": "/scholars/fawzan/pdf/Circus.pdf"
+			},
+			{
+				"title": "Dictionary of dreams not by Ibn Seerin",
+				"url": "/scholars/fawzan/pdf/Dictionary_of_dreams_not_by_Ibn_Seerin.pdf"
+			},
+			{
+				"title": "Do not call me by my Muslim name",
+				"url": "/scholars/fawzan/pdf/Do_not_call_me_by_my_Muslim_name.pdf"
+			},
+			{
+				"title": "Does this Hadith validate criticizing the rulers via the internet",
+				"url": "/scholars/fawzan/pdf/Does_this_Hadith_validate_criticizing_the_rulers_via_the_internet.pdf"
+			},
+			{
+				"title": "During the Last Days Sudden Death will Increase",
+				"url": "/scholars/fawzan/pdf/During_the_Last_Days_Sudden_Death_will_Increase.pdf"
+			}
+		]
+	}]
+}
+
+  ]
