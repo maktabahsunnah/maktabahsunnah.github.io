@@ -26,6 +26,15 @@
 			templateUrl: '../partials/scholar-detail.html'
 			,controller : 'scholarDetailCtrl'
 		  })
+		.when('/blog', {
+			title: 'Scholars List'
+			,templateUrl: '../partials/blog.html'
+			,controller : 'scholarListCtrl'
+		  })
+		.when('/blog/:blogId', {
+			templateUrl: '../partials/blog-detail.html'
+			,controller : 'scholarDetailCtrl'
+		  })
 		.otherwise({
 			redirectTo: '/home'
 		  });
