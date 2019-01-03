@@ -1,12 +1,12 @@
 <div ng-controller="blogCtrl">
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page"><a href="#/scholars"><i class="fas fa-arrow-left"></i> Go back</a></li>
+    <li class="breadcrumb-item active" aria-current="page"><a href="#/blog"><i class="fas fa-arrow-left"></i> Go back</a></li>
   </ol>
 </nav>
 <hr/>
   
-<h5 class="text-center" ng-repeat-start="book in books">{{book.scholar}}</h5>
+<h5 class="text-center" ng-repeat-start="book in books">{{book.blog}}</h5>
 <br/>
 
 <ul class="list-group" ng-repeat-end ng-repeat="m in book.book" ng-show="isVisible(book.title)">
