@@ -1,5 +1,9 @@
-<h5>Free e-books:</h5>
+<div ng-controller="blogCtrl">
+Free e-books:</h5>
 <br/>
+<div class="card">
+  <h5 class="card-header"><i class="far fa-file-alt"></i> Ebooks</h5>
+  <div class="card-body">
 <table class="table table-striped" ng-controller="scholarListCtrl">
 <tbody>
   <tr ng-repeat="item in scholars | limitTo:4">
@@ -8,24 +12,30 @@
   </tr>
 <tbody>
 </table>
+</div>
+</div>
 
    <div class="text-center">
       <a role="button" class="btn btn-light" href="#/scholars"><span class="icon-quill"></span> View all scholars</a>
    </div>
+
+</div>
 
 <br/>
 
 <div ng-controller="blogCtrl">
 
 <div class="card" ng-repeat="item in blog | limitTo:2">
-  <h5 class="card-header">Articles</h5>
+  <h5 class="card-header"><i class="far fa-file-alt"></i> Articles</h5>
   <div class="card-body">
     <h5 class="card-title"><a href="#/blog/{{item.id}}">{{item.title}}</a></h5>
     <p class="card-text">{{item.desc}}</p>
   </div>
 </div>
 <br/>
+   <div class="text-center">
     <a href="#/blog" class="btn btn-primary">View all entries</a>
+   </div>
 </div>
 
 
