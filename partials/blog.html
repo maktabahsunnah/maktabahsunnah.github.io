@@ -1,13 +1,13 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#/home">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Scholars</li>
+    <li class="breadcrumb-item active" aria-current="page">Blog</li>
   </ol>
 </nav>
 <hr/>
 <ul class="nav justify-content-center">
   <li class="nav-item">
-    <a class="nav-link active" href="javascript:void(0)">Total scholars: <strong>{{totalScholars()}}</strong></a>
+    <a class="nav-link active" href="javascript:void(0)">Total Articles: <strong>{{totalBlog()}}</strong></a>
   </li>
   <li class="nav-item">
     <a class="nav-link btn btn-link" href="" ng-click="scholar = '-name'; reverse=false">Newest</a>
@@ -16,19 +16,19 @@
     <a class="nav-link btn btn-link" href="" ng-click="scholar = 'name'; reverse=false">Alphabetical</a>
   </li>
   <li class="nav-item">
-    <input class="form-control" type="text" ng-model="name" placeholder="Filter scholars...">
+    <input class="form-control" type="text" ng-model="name" placeholder="Filter articles...">
   </li>
 </ul>
 <br/>
 <table class="table table-striped">
 
-<p ng-if="scholars.length === 0">
+<p ng-if="blog.length === 0">
  <span>loading...</span>
 </p>
 
-  <tr ng-repeat="item in scholars | orderBy:scholar:reverse | filter : name">
+  <tr ng-repeat="item in blog | orderBy:blog:reverse | filter : name">
     <td>{{ $index + 1 }}</td>
-    <td><a href="#/scholars/{{item.id}}">{{item.name}}</a></td>
+    <td><a href="#/blog/{{item.id}}">{{item.title}}</a></td>
   </tr>
 </table>
 
