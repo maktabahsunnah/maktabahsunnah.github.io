@@ -7,7 +7,8 @@
 	  'ngRoute',
 	  'ngSanitize',
 	  'scholarCtrls',
-	  'scholarDirectives'
+	  'scholarDirectives',
+	  'blogCtrls'
 	]);
 	
 	app.config(['$routeProvider',
@@ -27,7 +28,7 @@
 			,controller : 'scholarDetailCtrl'
 		  })
 		.when('/blog', {
-			title: 'Scholars List'
+			title: 'Articles'
 			,templateUrl: '../partials/blog.html'
 			,controller : 'blogCtrl'
 		  })
