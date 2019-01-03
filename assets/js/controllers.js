@@ -33,6 +33,8 @@
 	
 })();
 
+
+
 "use strict";
  
 (function(){
@@ -41,7 +43,7 @@
      app.controller('blogCtrl', ['$http', '$scope', function($http, $scope){
         $scope.blog = [];
 
-        $http.get('../../data/json/blog.json').success(function(data) {
+        $http.get('../../data/blog/blog.json').success(function(data) {
             $scope.scholars = data;
         });
 		
@@ -51,7 +53,7 @@
     }]);
 	
   app.controller('blogDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
-    $http.get('../../data/json/' + $routeParams.blogId + '.json').success(function(data) {
+    $http.get('../../data/blog/' + $routeParams.blogId + '.json').success(function(data) {
         $scope.books = [];
         angular.forEach(data.books, function(value, key) {
             $scope.books.push(value);
