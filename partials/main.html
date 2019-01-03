@@ -13,21 +13,18 @@
       <a role="button" class="btn btn-light" href="#/scholars"><span class="icon-quill"></span> View all scholars</a>
    </div>
 
-<br/><hr/>
+<br/>
 
-<h5>Latest articles</h5>
-<br/>
-<table class="table table-striped" ng-controller="blogCtrl">
-<tbody>
-  <tr ng-repeat="item in blog | limitTo:4">
-    <th scope="row">{{ $index + 1 }}</th>
-    <td><a href="#/blog/{{item.id}}">{{item.title}}</a></td>
-  </tr>
-<tbody>
-</table>
-<br/>
-   <div class="text-center">
-      <a role="button" class="btn btn-light" href="#/blog"><span class="icon-quill"></span> View all articles</a>
-   </div>
+<div class="card" ng-controller="blogCtrl" ng-repeat="item in blog | limitTo:2">
+  <h5 class="card-header">Articles</h5>
+  <div class="card-body">
+    <h5 class="card-title"><a href="#/blog/{{item.id}}">{{item.title}}</a></h5>
+    <p class="card-text">{{item.desc}}/p>
+    <a href="#/blog" class="btn btn-primary">View all entries</a>
+  </div>
+</div>
+
+
+
 
 
