@@ -1,11 +1,11 @@
 <h5>Free e-books</h5>
-<div class="card" style="width: 18rem;" ng-controller="scholarListCtrl">
+<div class="card" ng-controller="scholarListCtrl">
   <div class="card-header">
     <span class="icon-quill"></span> Scholars
-   <a role="button" class="btn btn-light" href="#/scholars"><span class="icon-quill"></span> View all</a>
+   <a role="button" class="btn btn-primary" href="#/scholars"><span class="icon-quill"></span> View all</a>
   </div>
   <ul ng-repeat="item in scholars | limitTo:4" class="list-group list-group-flush">
-    <a href="#/scholars/{{item.id}}"><li class="list-group-item">{{item.name}}</li></a>
+    <a class="list-group-item" href="#/scholars/{{item.id}}">{{item.name}}</a>
   </ul>
 </div>
 
