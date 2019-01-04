@@ -1,10 +1,6 @@
 [
 {
    "id": "evil-bidah",
-   "ra": "Ra",
-   "rh": "Rahimahullah",
-   "saw": "Sallalahu Alayhi wa sallam",
-   "aj": "Ajja wa jall",
    "title": "We do not give Salam",
    "author": "Imam Malik",
    "desc": "Imam Maalik said: How evil are the people of innovation we do not give them salaam.",
@@ -12,10 +8,6 @@
 },
 {
    "id": "think-before-speak",
-   "ra": "Ra",
-   "rh": "Rahimahullah",
-   "saw": "Sallalahu Alayhi wa sallam",
-   "aj": "Ajja wa jall",
    "title": "Think before speak",
    "author": "Hasan al-Basri",
    "desc": "When one wishes to say something then it is upon him to think before he speaks. If there is beneficial good in what he will say then he should speak. If he has doubt about that then he must not speak until that doubt is removed.",
