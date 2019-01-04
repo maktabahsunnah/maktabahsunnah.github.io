@@ -11,13 +11,13 @@
 <div ng-controller="fbCtrl">
 <ul class="list-inline">
   <li class="list-inline-item">Share:</li>
-  <li class="list-inline-item"><a ng-click="share(post)">Facebook</a></li>
-  <li class="list-inline-item"><a target="_blank" href="https://twitter.com/home?status=https%3A//maktabahsunnah.github.io/%23/blog/{{item.id}}">Twitter</a></li>
+  <li class="list-inline-item"><a role="button" type="button" class="btn btn-link" ng-click="share(post)">Facebook</a></li>
+  <li class="list-inline-item"><a  role="button" type="button" class="btn btn-link" target="_blank" href="https://twitter.com/home?status=https%3A//maktabahsunnah.github.io/%23/blog/{{item.id}}">Twitter</a></li>
 </ul>
 </div>
 
 <h5 class="text-center">{{blog.title}}</h5>
 <br/>
-<p>{{blog.author}}</p>
+<p><b>{{blog.author}}</b></p>
 <p ng-bind-html="blog.desc"></p>
-<p>{{blog.source}}</p>
+<p><b>{{blog.source}}</b></p>
