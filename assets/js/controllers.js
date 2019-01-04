@@ -57,4 +57,21 @@
             $scope.blog = data;
         });
     }]); 
+
+  app.controller("fbCtrl",function($scope){
+  $scope.blog = [];
+  $scope.share = function(post){
+    FB.ui(
+    {
+        method: 'feed',
+        name: 'title',
+        link: 'https://maktabahsunnah.github.io/#/blog/'+blogId,
+        picture: '',
+        caption: post.caption,
+        description: 'desc',
+        message: ''
+    });
+  }
+});
+
 })();
