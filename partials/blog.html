@@ -21,6 +21,10 @@
     <p class="card-text" ng-bind-html="item.desc | limitTo: 100"></p>
     <div class="btn-group dropright">
     <a role="button" href="#" class="card-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Share</a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Facebook</a>
+    <a class="dropdown-item" href="#">Twitter</a>
+  </div>
     <a href="#/blog/{{item.id}}" class="card-link">Read more</a>
     </div>
   </div>
