@@ -19,7 +19,7 @@
   <h5 class="align-middle card-header"><i class="far fa-file-alt"></i> Articles <a href="#/blog" class="float-right btn btn-primary">View all</a></h5>
   <div ng-repeat="item in blog | limitTo:2" class="card-body">
     <h5 class="card-title"><a href="#/blog/{{item.id}}">{{item.title}}</a></h5>
-    <p ng-bind-html="item.desc | limitTo: 20" class="card-text"></p>
+    <p ng-bind-html="item.desc | limitTo: 100" class="card-text"></p>
   </div>
 </div>
 </div>
