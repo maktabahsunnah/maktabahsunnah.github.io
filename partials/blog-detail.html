@@ -1,18 +1,15 @@
 <div ng-controller="blogCtrl">
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page"><a href="#/blog"><i class="fas fa-arrow-left"></i> Go back</a></li>
+    <li class="breadcrumb-item"><a href="#/home">Home</li>
+    <li class="breadcrumb-item"><a href="#/blog">Blog</li>
+    <li class="breadcrumb-item active" aria-current="page">{{blog.title}}</li>
   </ol>
 </nav>
 <hr/>
   
-<h5 class="text-center" ng-repeat-start="book in books">{{book.blog}}</h5>
-<br/>
+<h5 class="text-center">{{blog.title}}</h5>
 
-<ul class="list-group" ng-repeat-end ng-repeat="m in book.book" ng-show="isVisible(book.title)">
- <li class="list-group-item d-flex justify-content-between align-items-center">
- <a target="_blank" href="{{m.url}}"><span>{{m.title}}</span></a>
- </li>
-</ul>
+<div ng-bind-html="flowers.desc"></div>
 
 </div>
