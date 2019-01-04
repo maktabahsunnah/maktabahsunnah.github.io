@@ -34,11 +34,10 @@
 })();
 
 
-
 "use strict";
  
 (function(){
-     var app = angular.module('blogCtrls', []);
+	var app = angular.module('blogCtrls', []);
 	  
      app.controller('blogCtrl', ['$http', '$scope', function($http, $scope){
         $scope.blog = [];
@@ -52,20 +51,10 @@
 		};
     }]);
 	
-  app.controller('blogDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
-    $http.get('../../data/blog/' + $routeParams.blogId + '.json').success(function(data) {
-        $scope.books = [];
-        angular.forEach(data.books, function(value, key) {
-            $scope.books.push(value);
+    app.controller('blogDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope,$routeParams){
+        $scope.blog = [];
+        $http.get('../../data/blog/' + $routeParams.blogId + '.json').success(function(data) { 
+            $scope.blog = data;
         });
-        $scope.isVisible = function(name){
-            return true;
-        };
-		 $scope.totalBooks = function(){
-			return $scope.books.length;
-		};
-    });
-  }]); 
-	
-	
+    }]); 
 })();
