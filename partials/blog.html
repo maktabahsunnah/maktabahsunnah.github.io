@@ -1,13 +1,18 @@
+  <div class="row">
+    <div class="col">
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#/home">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Blog</li>
   </ol>
 </nav>
-<hr/>
+    </div>
+    <div class="col">
 <p>Total Articles: <strong>{{totalBlog()}}</strong></p>
+    </div>
+  </div>
 
-<br/>
+<hr/>
 
 <div ng-repeat="item in blog" class="card">
   <div class="card-body">
