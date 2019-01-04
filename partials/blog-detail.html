@@ -1,8 +1,8 @@
 <div ng-controller="blogCtrl">
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#/home">Home</li>
-    <li class="breadcrumb-item"><a href="#/blog">Blog</li>
+    <li class="breadcrumb-item"><a href="#/home">Home</a></li>
+    <li class="breadcrumb-item"><a href="#/blog">Blog</a></li>
     <li class="breadcrumb-item active" aria-current="page">{{blog.title}}</li>
   </ol>
 </nav>
@@ -10,6 +10,6 @@
   
 <h5 class="text-center">{{blog.title}}</h5>
 
-<div ng-bind-html="flowers.desc"></div>
+<div ng-bind-html="blog.desc"></div>
 
 </div>
